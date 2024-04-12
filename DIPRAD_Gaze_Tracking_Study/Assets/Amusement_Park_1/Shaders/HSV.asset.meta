@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7fcc69dda830ec74d898d3b70534c652
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235574
+  packageName: Amusement park 1
+  packageVersion: 1.0
+  assetPath: Assets/Amusement_Park_1/Shaders/HSV.asset
+  uploadId: 641896

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 65acc524ed632c5499dce26d2b00b8cc
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235574
+  packageName: Amusement park 1
+  packageVersion: 1.0
+  assetPath: Assets/Amusement_Park_1/Shaders/Water.shader
+  uploadId: 641896

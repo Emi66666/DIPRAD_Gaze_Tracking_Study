@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 46bf03b444a36bb4bbfc21946e6f284f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235574
+  packageName: Amusement park 1
+  packageVersion: 1.0
+  assetPath: Assets/Amusement_Park_1/Shaders/Rnd_Animation.cs
+  uploadId: 641896
