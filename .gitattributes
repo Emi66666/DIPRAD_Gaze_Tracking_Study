@@ -1,2 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+*/ArtifactDB filter=lfs diff=lfs merge=lfs -text
+*./Runtime/* filter=lfs diff=lfs merge=lfs -text
+DIPRAD_Gaze_Tracking_Study/Library/ArtifactDB filter=lfs diff=lfs merge=lfs -text
+DIPRAD_Gaze_Tracking_Study/Library/ArtifactDB filter=lfs diff=lfs merge=lfs -text
+DIPRAD_Gaze_Tracking_Study/Library/ArtifactDB filter=lfs diff=lfs merge=lfs -text
