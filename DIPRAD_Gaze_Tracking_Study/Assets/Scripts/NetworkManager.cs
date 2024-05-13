@@ -85,6 +85,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public void StartGame()
     {
         Debug.Log("Game starting...");
+        gameStartingText.SetActive(true);
         int mapValue = mapDropdown.value;
         int gamemodeValue = gamemodeDropdown.value;
         // TODO: Add to scriptable object
