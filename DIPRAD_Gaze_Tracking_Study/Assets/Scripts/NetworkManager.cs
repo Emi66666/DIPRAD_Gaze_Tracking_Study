@@ -5,6 +5,7 @@ using Photon.Pun;
 using TMPro;
 using Photon.Realtime;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
@@ -12,6 +13,13 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public GameObject connectingToLobbyText;
     public GameObject connectingToRoomText;
     public GameObject waitingForPlayerText;
+    public GameObject gameStartingText;
+
+    public GameObject gameMenu;
+    public Button startButton;
+
+    public TMP_Dropdown mapDropdown;
+    public TMP_Dropdown gamemodeDropdown;
 
     public GameObject player;
 
@@ -65,9 +73,22 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public void ShowGameMenu()
     {
+        gameMenu.SetActive(true);
         if (!PhotonNetwork.IsMasterClient)
         {
-            //_startButton.SetActive(false);
+            startButton.interactable = false;
+            mapDropdown.interactable = false;
+            gamemodeDropdown.interactable = false;
         }
+    }
+
+    public void StartGame()
+    {
+        Debug.Log("Game starting...");
+        int mapValue = mapDropdown.value;
+        int gamemodeValue = gamemodeDropdown.value;
+        // TODO: Add to scriptable object
+
+        PhotonNetwork.LoadLevel(mapValue + 1);
     }
 }
