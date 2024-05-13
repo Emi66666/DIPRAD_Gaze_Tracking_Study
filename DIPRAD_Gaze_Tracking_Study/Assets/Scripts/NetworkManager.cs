@@ -45,6 +45,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         Debug.Log("Successfully joined the room.");
         connectingToRoomText.SetActive(false);
+        player = PhotonNetwork.Instantiate("NetworkedPrefabs/Player", new Vector3(0, 0, 0), Quaternion.identity, 0);
 
         if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
         {
@@ -64,8 +65,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public void ShowGameMenu()
     {
-        player = PhotonNetwork.Instantiate("NetworkedPrefabs/OVRCameraRigInteractionNetworked", new Vector3(0, 0, 0), Quaternion.identity, 0);
-
         if (!PhotonNetwork.IsMasterClient)
         {
             //_startButton.SetActive(false);
