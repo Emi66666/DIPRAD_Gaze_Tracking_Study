@@ -58,14 +58,6 @@ public class NetworkPlayerInstantiator : MonoBehaviourPunCallbacks
         }
     }
 
-    public override void OnPlayerEnteredRoom(Player newPlayer)
-    {
-        if (_photonView.IsMine && PhotonNetwork.IsMasterClient)
-        {
-            _photonView.RPC("StartTimer", RpcTarget.All);
-        }
-    }
-
     [PunRPC]
     public void StartTimer()
     {

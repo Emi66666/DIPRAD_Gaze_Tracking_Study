@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using Photon.Pun;
 
 public class Timer : MonoBehaviour
 {
@@ -9,7 +10,17 @@ public class Timer : MonoBehaviour
     private bool started = false;
     private bool finished = false;
 
+    public GameObject OVRCameraRig;
+    public Transform spawnPoint;
+
     public TMP_Text[] timeTextFields;
+
+    private PhotonView _photonView;
+
+    void Awake()
+    {
+        _photonView = GetComponent<PhotonView>();
+    }
 
     public void StartTimer()
     {
@@ -29,7 +40,10 @@ public class Timer : MonoBehaviour
 
             if (timer <= 0.0f)
             {
-                TimerEnded();
+                if (PhotonNetwork.IsMasterClient)
+                {
+                    _photonView.RPC("TimerEnded", RpcTarget.All);
+                }
             }
         }
     }
@@ -51,5 +65,8 @@ public class Timer : MonoBehaviour
     {
         finished = true;
         timer = 0.0f;
+
+        OVRCameraRig.transform.position = spawnPoint.position;
+        // TODO: Teleport player back after timer expires
     }
 }
