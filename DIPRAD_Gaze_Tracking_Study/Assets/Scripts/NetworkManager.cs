@@ -18,8 +18,11 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public GameObject gameMenu;
     public Button startButton;
 
-    public TMP_Dropdown mapDropdown;
-    public TMP_Dropdown gamemodeDropdown;
+    public GameObject mapText;
+    public GameObject mapDropdown;
+    public GameObject gamemodeText;
+    public GameObject gamemodeDropdown;
+    public GameObject ownerChangingText;
 
     public GameObject player;
 
@@ -77,8 +80,14 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         if (!PhotonNetwork.IsMasterClient)
         {
             startButton.interactable = false;
-            mapDropdown.interactable = false;
-            gamemodeDropdown.interactable = false;
+            mapText.SetActive(false);
+            mapDropdown.SetActive(false);
+            gamemodeText.SetActive(false);
+            gamemodeDropdown.SetActive(false);
+        }
+        else
+        {
+            ownerChangingText.SetActive(false);
         }
     }
 
@@ -87,8 +96,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         Debug.Log("Game starting...");
         gameMenu.SetActive(false);
         gameStartingText.SetActive(true);
-        int mapValue = mapDropdown.value;
-        int gamemodeValue = gamemodeDropdown.value;
+        int mapValue = mapDropdown.GetComponent<TMP_Dropdown>().value;
+        int gamemodeValue = gamemodeDropdown.GetComponent<TMP_Dropdown>().value;
         // TODO: Add to scriptable object
 
         PhotonNetwork.LoadLevel(mapValue + 1);
