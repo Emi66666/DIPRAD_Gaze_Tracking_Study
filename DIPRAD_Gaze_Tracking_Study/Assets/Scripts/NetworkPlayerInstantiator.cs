@@ -31,6 +31,7 @@ public class NetworkPlayerInstantiator : MonoBehaviourPunCallbacks
                 waitingForPlayerText.SetActive(true);
             }
         }
+        // TODO: Count player clones instead of current room player count or scene player count
         else if (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount == 2)
         {
             StartTimer();

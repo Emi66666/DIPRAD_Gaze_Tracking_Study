@@ -94,10 +94,10 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public void StartGame()
     {
         Debug.Log("Game starting...");
-        gameMenu.SetActive(false);
-        gameStartingText.SetActive(true);
         int mapValue = mapDropdown.GetComponent<TMP_Dropdown>().value;
         int gamemodeValue = gamemodeDropdown.GetComponent<TMP_Dropdown>().value;
+        gameMenu.SetActive(false);
+        gameStartingText.SetActive(true);
         // TODO: Add to scriptable object
 
         PhotonNetwork.LoadLevel(mapValue + 1);
