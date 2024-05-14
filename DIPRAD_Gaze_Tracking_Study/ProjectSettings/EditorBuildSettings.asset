@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Map_Amusement_Park.unity
+    guid: df562e467921cd44db263b57641293f3
+  - enabled: 1
     path: Assets/Scenes/Main_Menu.unity
     guid: f1ab714a99314ae46b8dee293aedec0f
   m_configObjects:
