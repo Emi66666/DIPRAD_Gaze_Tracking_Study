@@ -15,6 +15,8 @@ public class NetworkPlayerInstantiator : MonoBehaviourPunCallbacks
 
     private PhotonView _photonView;
 
+    private bool initialized = false;
+
     void Awake()
     {
         _photonView = GetComponent<PhotonView>();
@@ -23,6 +25,9 @@ public class NetworkPlayerInstantiator : MonoBehaviourPunCallbacks
     void Start()
     {
         player = PhotonNetwork.Instantiate("NetworkedPrefabs/Player", new Vector3(0, 0, 0), Quaternion.identity, 0);
+        ExitGames.Client.Photon.Hashtable playerCustomProperties = new ExitGames.Client.Photon.Hashtable();
+        playerCustomProperties.Add("Loaded", PhotonNetwork.NickName);
+        PhotonNetwork.SetPlayerCustomProperties(playerCustomProperties);
 
         if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
         {
@@ -31,10 +36,25 @@ public class NetworkPlayerInstantiator : MonoBehaviourPunCallbacks
                 waitingForPlayerText.SetActive(true);
             }
         }
-        // TODO: Count player clones instead of current room player count or scene player count
-        else if (PhotonNetwork.IsMasterClient && PhotonNetwork.CurrentRoom.PlayerCount == 2)
+    }
+
+    private void Update()
+    {
+        if (!initialized && PhotonNetwork.IsMasterClient)
         {
-            StartTimer();
+            int loadedCount = 0;
+            foreach (var player in PhotonNetwork.PlayerList)
+            {
+                if (player.CustomProperties.ContainsKey("Loaded"))
+                {
+                    loadedCount++;
+                }
+            }
+
+            if (loadedCount == 2)
+            {
+                _photonView.RPC("StartTimer", RpcTarget.All);
+            }
         }
     }
 
