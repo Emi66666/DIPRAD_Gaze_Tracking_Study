@@ -23,24 +23,34 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4304186635638091979}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3469935743657070286}
   - {fileID: 8324323195813626166}
   - {fileID: 5633380567002039213}
   - {fileID: 8970163009693620452}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &201398977747568577
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1602739870398260514}
     m_Modifications:
+    - target: {fileID: 632968042528027463, guid: 66bb575416a15b94fab20504211e0da5, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8405258109520204086, guid: 66bb575416a15b94fab20504211e0da5, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9131022915542827781, guid: 66bb575416a15b94fab20504211e0da5, type: 3}
       propertyPath: m_Name
       value: Structure_BridgeMid (1)
@@ -90,6 +100,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66bb575416a15b94fab20504211e0da5, type: 3}
 --- !u!4 &8970163009693620452 stripped
 Transform:
@@ -101,8 +114,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1602739870398260514}
     m_Modifications:
+    - target: {fileID: -5603664671467026039, guid: 7455f40b85a72414988e27ceb646cafd, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2819823883119403611, guid: 7455f40b85a72414988e27ceb646cafd, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5249416142499563301, guid: 7455f40b85a72414988e27ceb646cafd, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -152,6 +174,9 @@ PrefabInstance:
       value: Structure_SideBridge (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7455f40b85a72414988e27ceb646cafd, type: 3}
 --- !u!4 &5633380567002039213 stripped
 Transform:
@@ -163,8 +188,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1602739870398260514}
     m_Modifications:
+    - target: {fileID: 632968042528027463, guid: 66bb575416a15b94fab20504211e0da5, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8405258109520204086, guid: 66bb575416a15b94fab20504211e0da5, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9131022915542827781, guid: 66bb575416a15b94fab20504211e0da5, type: 3}
       propertyPath: m_Name
       value: Structure_BridgeMid
@@ -214,6 +248,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66bb575416a15b94fab20504211e0da5, type: 3}
 --- !u!4 &8324323195813626166 stripped
 Transform:
@@ -225,8 +262,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1602739870398260514}
     m_Modifications:
+    - target: {fileID: -5603664671467026039, guid: 7455f40b85a72414988e27ceb646cafd, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2819823883119403611, guid: 7455f40b85a72414988e27ceb646cafd, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5249416142499563301, guid: 7455f40b85a72414988e27ceb646cafd, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -276,6 +322,9 @@ PrefabInstance:
       value: Structure_SideBridge
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7455f40b85a72414988e27ceb646cafd, type: 3}
 --- !u!4 &3469935743657070286 stripped
 Transform:

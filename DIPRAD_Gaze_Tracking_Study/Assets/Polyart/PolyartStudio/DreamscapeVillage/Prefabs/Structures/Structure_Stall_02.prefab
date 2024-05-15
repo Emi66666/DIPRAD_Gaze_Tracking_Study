@@ -9,6 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8616974049170017272}
+  - component: {fileID: 875522868442204008}
+  - component: {fileID: 5574379133736644585}
+  - component: {fileID: -8716853546171632882}
   m_Layer: 0
   m_Name: Structure_Stall_02
   m_TagString: Untagged
@@ -23,22 +26,79 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726888417730940804}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3496383813781418817}
   - {fileID: 2515748791132412664}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &875522868442204008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726888417730940804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4462db6b836045640a882a2a4e4022f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _allowTeleport: 0
+  _equalDistanceToBlockerOverride: 0
+  _tieBreakerScore: 0
+  _surface: {fileID: 0}
+  _targetPoint: {fileID: 0}
+  _faceTargetDirection: 0
+  _eyeLevel: 0
+--- !u!114 &5574379133736644585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726888417730940804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2140d2b457bea84881488302059889b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 0}
+--- !u!114 &-8716853546171632882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726888417730940804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e617737c781e534eb8e2c4ace64b133, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _snapPoint: {fileID: 0}
+  _materialBlock: {fileID: 0}
+  _reticleMode: 2
 --- !u!1001 &3251796629143163585
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8616974049170017272}
     m_Modifications:
+    - target: {fileID: -720489681144253078, guid: ace642700a273164eb290cbf1d66c92d, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1137457958015423513, guid: ace642700a273164eb290cbf1d66c92d, type: 3}
       propertyPath: m_Name
       value: Structure_StallCover_02
@@ -87,7 +147,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5347897009001224604, guid: ace642700a273164eb290cbf1d66c92d, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ace642700a273164eb290cbf1d66c92d, type: 3}
 --- !u!4 &2515748791132412664 stripped
 Transform:
@@ -99,8 +166,13 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8616974049170017272}
     m_Modifications:
+    - target: {fileID: -222626262105239723, guid: e0553baad856c7948b39fca0e2d9ff1d, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 823068951248955742, guid: e0553baad856c7948b39fca0e2d9ff1d, type: 3}
       propertyPath: m_Name
       value: Structure_MarketStallStructure
@@ -149,7 +221,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4596593544096382355, guid: e0553baad856c7948b39fca0e2d9ff1d, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0553baad856c7948b39fca0e2d9ff1d, type: 3}
 --- !u!4 &3496383813781418817 stripped
 Transform:

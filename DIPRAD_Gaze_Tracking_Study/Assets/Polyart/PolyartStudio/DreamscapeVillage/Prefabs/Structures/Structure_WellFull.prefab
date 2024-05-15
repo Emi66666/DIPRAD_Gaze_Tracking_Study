@@ -9,6 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4350498248631680408}
+  - component: {fileID: 491559231907282036}
+  - component: {fileID: -6750446877262588611}
+  - component: {fileID: -8781612169715096256}
   m_Layer: 0
   m_Name: Structure_WellFull
   m_TagString: Untagged
@@ -23,22 +26,83 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4762754517856813460}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4329065333690463852}
   - {fileID: 2198429458019641193}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &491559231907282036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4762754517856813460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4462db6b836045640a882a2a4e4022f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _allowTeleport: 0
+  _equalDistanceToBlockerOverride: 0
+  _tieBreakerScore: 0
+  _surface: {fileID: 0}
+  _targetPoint: {fileID: 0}
+  _faceTargetDirection: 0
+  _eyeLevel: 0
+--- !u!114 &-6750446877262588611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4762754517856813460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2140d2b457bea84881488302059889b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 0}
+--- !u!114 &-8781612169715096256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4762754517856813460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e617737c781e534eb8e2c4ace64b133, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _snapPoint: {fileID: 0}
+  _materialBlock: {fileID: 0}
+  _reticleMode: 2
 --- !u!1001 &4399598141219314301
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 4350498248631680408}
     m_Modifications:
+    - target: {fileID: 691853601667348932, guid: e6db654e81a33bf43bc48a8c2ac86ad5, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2416611440605015943, guid: e6db654e81a33bf43bc48a8c2ac86ad5, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2561669414929530132, guid: e6db654e81a33bf43bc48a8c2ac86ad5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -88,6 +152,9 @@ PrefabInstance:
       value: SM_Well (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6db654e81a33bf43bc48a8c2ac86ad5, type: 3}
 --- !u!4 &2198429458019641193 stripped
 Transform:
@@ -99,8 +166,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 4350498248631680408}
     m_Modifications:
+    - target: {fileID: -8774653190149623112, guid: 51001a77134654b4a804c3f8c71fdfee, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5038327437887909971, guid: 51001a77134654b4a804c3f8c71fdfee, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5225334892402395615, guid: 51001a77134654b4a804c3f8c71fdfee, type: 3}
       propertyPath: m_Name
       value: SM_WellRoof (1)
@@ -150,9 +226,33 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51001a77134654b4a804c3f8c71fdfee, type: 3}
 --- !u!4 &4329065333690463852 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5225334892402759167, guid: 51001a77134654b4a804c3f8c71fdfee, type: 3}
   m_PrefabInstance: {fileID: 8401451474211382163}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5412748484782164307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1

@@ -9,6 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8558200933537954353}
+  - component: {fileID: 310749574120391771}
+  - component: {fileID: 337713998344250791}
+  - component: {fileID: -2179525769547205021}
   m_Layer: 0
   m_Name: Structure_VillageWall_TIling_Square
   m_TagString: Untagged
@@ -23,6 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767009950584117821}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -48,15 +52,74 @@ Transform:
   - {fileID: 3845649439683721163}
   - {fileID: 306311160545277577}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &310749574120391771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767009950584117821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4462db6b836045640a882a2a4e4022f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _allowTeleport: 0
+  _equalDistanceToBlockerOverride: 0
+  _tieBreakerScore: 0
+  _surface: {fileID: 0}
+  _targetPoint: {fileID: 0}
+  _faceTargetDirection: 0
+  _eyeLevel: 0
+--- !u!114 &337713998344250791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767009950584117821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2140d2b457bea84881488302059889b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 0}
+--- !u!114 &-2179525769547205021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767009950584117821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e617737c781e534eb8e2c4ace64b133, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _snapPoint: {fileID: 0}
+  _materialBlock: {fileID: 0}
+  _reticleMode: 2
 --- !u!1001 &68662732230363740
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -1405562915517366114, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550095994321217560, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8924674924797760215, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -118,6 +181,9 @@ PrefabInstance:
       value: Structure_VillageWall_End (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
 --- !u!4 &8874660734526429323 stripped
 Transform:
@@ -129,8 +195,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -1405562915517366114, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550095994321217560, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8924674924797760215, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -192,6 +267,9 @@ PrefabInstance:
       value: Structure_VillageWall_End (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
 --- !u!4 &8828960951004733915 stripped
 Transform:
@@ -203,8 +281,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -7252622092689948968, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -185450891906062063, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7067924772796669898, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
       propertyPath: m_Name
       value: Structure_VillageWall_TIling (09)
@@ -270,6 +357,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
 --- !u!4 &7264404130000879382 stripped
 Transform:
@@ -281,8 +371,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -1405562915517366114, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550095994321217560, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8924674924797760215, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -344,6 +443,9 @@ PrefabInstance:
       value: Structure_VillageWall_End (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
 --- !u!4 &8591469557045000340 stripped
 Transform:
@@ -355,8 +457,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -1405562915517366114, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550095994321217560, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8924674924797760215, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -418,6 +529,9 @@ PrefabInstance:
       value: Structure_VillageWall_End (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
 --- !u!4 &6937905889668002831 stripped
 Transform:
@@ -429,8 +543,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -1405562915517366114, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550095994321217560, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8924674924797760215, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -492,6 +615,9 @@ PrefabInstance:
       value: Structure_VillageWall_End (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
 --- !u!4 &6434814596502831446 stripped
 Transform:
@@ -503,8 +629,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -7252622092689948968, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -185450891906062063, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7067924772796669898, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
       propertyPath: m_Name
       value: Structure_VillageWall_TIling (22)
@@ -570,6 +705,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
 --- !u!4 &6362625697771200256 stripped
 Transform:
@@ -581,8 +719,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -7252622092689948968, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -185450891906062063, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7067924772796669898, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
       propertyPath: m_Name
       value: Structure_VillageWall_TIling (21)
@@ -648,6 +795,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
 --- !u!4 &2471074418579699370 stripped
 Transform:
@@ -659,8 +809,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -7252622092689948968, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -185450891906062063, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7067924772796669898, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
       propertyPath: m_Name
       value: Structure_VillageWall_TIling (20)
@@ -726,6 +885,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
 --- !u!4 &2354405582560903629 stripped
 Transform:
@@ -737,8 +899,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -7252622092689948968, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -185450891906062063, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7067924772796669898, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
       propertyPath: m_Name
       value: Structure_VillageWall_TIling (23)
@@ -804,6 +975,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
 --- !u!4 &2626128519958256972 stripped
 Transform:
@@ -815,8 +989,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -7252622092689948968, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -185450891906062063, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7067924772796669898, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
       propertyPath: m_Name
       value: Structure_VillageWall_TIling (07)
@@ -882,6 +1065,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
 --- !u!4 &3106876147504056644 stripped
 Transform:
@@ -893,8 +1079,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -1405562915517366114, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550095994321217560, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8924674924797760215, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -956,6 +1151,9 @@ PrefabInstance:
       value: Structure_VillageWall_End (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
 --- !u!4 &3249871857513955041 stripped
 Transform:
@@ -967,8 +1165,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -7252622092689948968, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -185450891906062063, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7067924772796669898, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
       propertyPath: m_Name
       value: Structure_VillageWall_TIling (6)
@@ -1034,6 +1241,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
 --- !u!4 &3845649439683721163 stripped
 Transform:
@@ -1045,8 +1255,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -7252622092689948968, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -185450891906062063, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7067924772796669898, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
       propertyPath: m_Name
       value: Structure_VillageWall_TIling (19)
@@ -1112,6 +1331,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
 --- !u!4 &4562584145919576269 stripped
 Transform:
@@ -1123,8 +1345,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -7252622092689948968, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -185450891906062063, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7067924772796669898, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
       propertyPath: m_Name
       value: Structure_VillageWall_TIling (18)
@@ -1190,6 +1421,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
 --- !u!4 &210902678082658648 stripped
 Transform:
@@ -1201,8 +1435,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -7252622092689948968, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -185450891906062063, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7067924772796669898, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
       propertyPath: m_Name
       value: Structure_VillageWall_TIling (5)
@@ -1268,6 +1511,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
 --- !u!4 &514283597360261778 stripped
 Transform:
@@ -1279,8 +1525,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -7252622092689948968, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -185450891906062063, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7067924772796669898, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
       propertyPath: m_Name
       value: Structure_VillageWall_TIling (08)
@@ -1346,6 +1601,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
 --- !u!4 &306311160545277577 stripped
 Transform:
@@ -1357,8 +1615,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -1405562915517366114, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550095994321217560, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8924674924797760215, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -1420,6 +1687,9 @@ PrefabInstance:
       value: Structure_VillageWall_End
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04cc823f81a03994ab80d39c086188c6, type: 3}
 --- !u!4 &1357392245763419555 stripped
 Transform:
@@ -1431,8 +1701,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 8558200933537954353}
     m_Modifications:
+    - target: {fileID: -7252622092689948968, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _allowTeleport
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -185450891906062063, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
+      propertyPath: _reticleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7067924772796669898, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
       propertyPath: m_Name
       value: Structure_VillageWall_TIling (17)
@@ -1498,9 +1777,411 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
 --- !u!4 &1722946547314070108 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7067924772796826602, guid: e67a482c75a305a4d919a9276627fcff, type: 3}
   m_PrefabInstance: {fileID: 8502640943769915830}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &499148759108172069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &744642044458341334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &934502696768029703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &1124531101704837148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &2256615543050936530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &2568721146439809994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &2888142477434581827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &3094883578764739620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &3227349035969638338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &4028952808422423107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &4117104887618693735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &4460328255027545413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &5457497155072701387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &5826999249075593039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &5833480365601566094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &5868838131771303455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &6687704779389386576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &7811599319661546904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
+--- !u!114 &8266785732033283730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f62acf90e41ded439f14c4e15871abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeState: {fileID: 0}
+  _interactableFilters: []
+  _candidateTiebreaker: {fileID: 0}
+  _maxIterationsPerFrame: 3
+  _data: {fileID: 0}
+  _selector: {fileID: 0}
+  _hmd: {fileID: 0}
+  _teleportArc: {fileID: 0}
+  _equalDistanceThreshold: 0.1
