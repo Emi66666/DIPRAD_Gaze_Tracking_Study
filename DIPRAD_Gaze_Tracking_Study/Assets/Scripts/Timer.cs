@@ -61,8 +61,10 @@ public class Timer : MonoBehaviour
         }
     }
 
-    void TimerEnded()
+    [PunRPC]
+    public void TimerEnded()
     {
+        Debug.Log("Timer Ended called");
         finished = true;
         timer = 0.0f;
 
