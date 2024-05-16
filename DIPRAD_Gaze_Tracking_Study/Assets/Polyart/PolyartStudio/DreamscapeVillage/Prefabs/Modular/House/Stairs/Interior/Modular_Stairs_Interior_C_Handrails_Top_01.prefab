@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1568580884929170737}
   - component: {fileID: 6191103351916092253}
+  - component: {fileID: 7788646225825943463}
+  - component: {fileID: 6051068894812159542}
+  - component: {fileID: -4328945537751928718}
   m_Layer: 0
   m_Name: Modular_Stairs_Interior_C_Handrails_Top_01
   m_TagString: Untagged
@@ -24,13 +27,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5499696790309642992}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 543450653462174441}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!205 &6191103351916092253
 LODGroup:
@@ -51,11 +55,63 @@ LODGroup:
     renderers:
     - renderer: {fileID: 1711813855800123782}
   m_Enabled: 1
+--- !u!114 &7788646225825943463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5499696790309642992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4462db6b836045640a882a2a4e4022f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _allowTeleport: 0
+  _equalDistanceToBlockerOverride: 0
+  _tieBreakerScore: 0
+  _surface: {fileID: 6051068894812159542}
+  _targetPoint: {fileID: 0}
+  _faceTargetDirection: 0
+  _eyeLevel: 0
+--- !u!114 &6051068894812159542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5499696790309642992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2140d2b457bea84881488302059889b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 7639482358589521550}
+--- !u!114 &-4328945537751928718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5499696790309642992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e617737c781e534eb8e2c4ace64b133, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _snapPoint: {fileID: 0}
+  _materialBlock: {fileID: 0}
+  _reticleMode: 2
 --- !u!1001 &237796610
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 1568580884929170737}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 908f92ad34cb57744999702cee45c207, type: 3}
@@ -107,20 +163,21 @@ PrefabInstance:
       value: SM_Stairs_Interior_C_Handrails_Top_01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 908f92ad34cb57744999702cee45c207, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7639482358589521550}
   m_SourcePrefab: {fileID: 100100000, guid: 908f92ad34cb57744999702cee45c207, type: 3}
---- !u!1 &919132149257420883 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 908f92ad34cb57744999702cee45c207, type: 3}
-  m_PrefabInstance: {fileID: 237796610}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &543450653462174441 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 908f92ad34cb57744999702cee45c207, type: 3}
   m_PrefabInstance: {fileID: 237796610}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &1711813855800123782 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 908f92ad34cb57744999702cee45c207, type: 3}
+--- !u!1 &919132149257420883 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 908f92ad34cb57744999702cee45c207, type: 3}
   m_PrefabInstance: {fileID: 237796610}
   m_PrefabAsset: {fileID: 0}
 --- !u!65 &7639482358589521550
@@ -131,8 +188,21 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132149257420883}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 2.9913552, y: 0.9176487, z: 0.14247027}
   m_Center: {x: -0.09609461, y: 0.51054496, z: -0.021632133}
+--- !u!23 &1711813855800123782 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 908f92ad34cb57744999702cee45c207, type: 3}
+  m_PrefabInstance: {fileID: 237796610}
+  m_PrefabAsset: {fileID: 0}
