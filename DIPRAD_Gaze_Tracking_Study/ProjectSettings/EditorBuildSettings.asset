@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map_Amusement_Park.unity
     guid: df562e467921cd44db263b57641293f3
+  - enabled: 1
+    path: Assets/Scenes/Map_Dreamscape_Village.unity
+    guid: 5f8bbde3aee98794e9c8cb970d7a21ef
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 94a4786928d4366479f2d7f089e38f46, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ee0889ba95db5ef449f7fbaa67131836, type: 2}

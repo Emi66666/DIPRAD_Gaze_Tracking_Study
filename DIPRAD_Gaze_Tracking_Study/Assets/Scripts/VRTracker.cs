@@ -40,6 +40,10 @@ public class VRTracker : MonoBehaviour
             {
                 item.enabled = false;
             }
+            foreach (var item in GetComponentsInChildren<Canvas>())
+            {
+                item.enabled = false;
+            }
         }
     }
 

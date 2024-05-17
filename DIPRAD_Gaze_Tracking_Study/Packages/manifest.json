@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.cognitive3d.c3d-sdk": "https://github.com/CognitiveVR/cvr-sdk-unity.git",
     "com.meta.xr.sdk.all": "64.0.0",
     "com.meta.xr.sdk.interaction.ovr.samples": "64.0.0",
     "com.unity.collab-proxy": "2.3.1",
@@ -9,7 +10,6 @@
     "com.unity.visualscripting": "1.8.0",
     "com.unity.xr.interaction.toolkit": "2.5.4",
     "com.unity.xr.oculus": "4.2.0",
-    "fr.liris.plume.recorder": "https://github.com/liris-xr/PLUME-Recorder.git",
     "com.unity.modules.accessibility": "1.0.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
