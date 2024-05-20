@@ -17,7 +17,7 @@ MonoBehaviour:
   Dashboard: app.cognitive3d.com
   Viewer: viewer.cognitive3d.com/scene/
   Documentation: docs.cognitive3d.com
-  EditorHasDisplayedPopup: 0
+  EditorHasDisplayedPopup: 1
   GazeType: 0
   ApplicationKey: ORKDVPEXYKRTYJQUV06TG5XQKGAVG5DJ
   AttributionKey: 
@@ -59,6 +59,6 @@ MonoBehaviour:
   - SceneName: Main_Menu
     SceneId: d54a43d2-3942-422a-b18e-8426b994e777
     ScenePath: Assets/Scenes/Main_Menu.unity
-    LastRevision: 05/16/2024 18:17:46
-    VersionNumber: 2
-    VersionId: 6341
+    LastRevision: 05/20/2024 08:38:13
+    VersionNumber: 3
+    VersionId: 6357

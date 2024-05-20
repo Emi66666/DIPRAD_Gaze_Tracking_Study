@@ -3,12 +3,12 @@
 *****************************
 Unity Version:2023.2.17f1
 OS:Windows 11  (10.0.22000) 64bit
-System Time: 16.5.2024. 20:13:32
+System Time: 20.5.2024. 10:37:51
 
 *****************************
 ***********PROJECT***********
 *****************************
-Scripting Define Symbols: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS;PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER;C3D_OCULUS;C3D_PHOTON
+Scripting Define Symbols: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS;PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER;C3D_OCULUS;C3D_PHOTON;C3D_LOCATION
 Packages:
   com.cognitive3d.c3d-sdk 1.4.7
   com.meta.xr.sdk.all 64.0.0
@@ -93,22 +93,22 @@ Scene Settings:
   │  ├─Version Number: 1
   │  └─Version Id: 6338
   └─Main_Menu
-     ├─Scene Id: 
+     ├─Scene Id: d54a43d2-3942-422a-b18e-8426b994e777
      ├─Scene Path: Assets/Scenes/Main_Menu.unity
-     ├─Last Revision: 
-     ├─Version Number: 0
-     └─Version Id: 0
+     ├─Last Revision: 05/16/2024 18:17:46
+     ├─Version Number: 2
+     └─Version Id: 6341
 
 *****************************
 ********CURRENT SCENE********
 *****************************
 Scene Name: Main_Menu
-Scene Id: 
+Scene Id: d54a43d2-3942-422a-b18e-8426b994e777
 Scene Path: Assets/Scenes/Main_Menu.unity
-Last Revision: 
-Version Number: 0
-Version Id: 0
-Scene Size (mb): 14,76
+Last Revision: 05/16/2024 18:17:46
+Version Number: 2
+Version Id: 6341
+Scene Size (mb): 15,51
 Main Camera GameObject: CenterEyeAnchor
 Manager Initialize On Start: True
 Manager Startup Delay Time (s): 0
@@ -117,13 +117,13 @@ Manager Startup Delay Time (s): 0
 ****CURRENT SCENE OBJECTS****
 *****************************
 Dynamic Object Count: 2
-  ├─RightHandAnchor
-  │  ├─Mesh Name: righthandanchor
+  ├─LeftHandAnchor
+  │  ├─Mesh Name: lefthandanchor
   │  ├─Has Collider: false
   │  ├─Has Children: true
   │  └─Has Child Colliders: false
-  └─LeftHandAnchor
-     ├─Mesh Name: lefthandanchor
+  └─RightHandAnchor
+     ├─Mesh Name: righthandanchor
      ├─Has Collider: false
      ├─Has Children: true
      └─Has Child Colliders: false
@@ -133,7 +133,7 @@ Dynamic Object Count: 2
 *****************************
 /Cognitive3D_SceneExplorerExport (295mb)
    /Dynamic (0,00mb)
-   /Main_Menu (14,76mb)
+   /Main_Menu (15,51mb)
       1180938966controller_r_lo_BaseColorMain.png (0,59mb)
       122199232touchController_albedoMain.png (0,07mb)
       1327411633controller_l_lo_NormalBump.png (1,73mb)
@@ -145,13 +145,19 @@ Dynamic Object Count: 2
       1923169716MetaQuestTouchPlus_NormalsBump.png (0,71mb)
       2116372573Reticle-CircleMain.png (0,01mb)
       2120440669OculusQuestTouchControllerTextureMain.png (0,21mb)
+      371857150Left_EyeMain.png (0,00mb)
       371857150MainMenuMain.png (0,00mb)
+      371857150MouthHappyMain.png (0,00mb)
+      371857150Right_EyeMain.png (0,00mb)
       371857150SelectionCircleMain.png (0,01mb)
       479365944OculusTouchForQuest2_AlbedoRoughnessMain.png (0,23mb)
       768432320controller_l_lo_BaseColorMain.png (0,58mb)
-      scene.bin (5,60mb)
-      scene.gltf (0,31mb)
+      debug.log (0,01mb)
+      scene.bin (6,17mb)
+      scene.gltf (0,33mb)
       settings.json (0,00mb)
+      /screenshot (0,13mb)
+         screenshot.png (0,13mb)
    /Map_Amusement_Park (41,52mb)
       1124351310TextureMain.png (0,14mb)
       1180938966controller_r_lo_BaseColorMain.png (0,59mb)
