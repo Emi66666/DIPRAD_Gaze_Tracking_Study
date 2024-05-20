@@ -5296,6 +5296,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: OVRCameraRigInteraction
       objectReference: {fileID: 0}
+    - target: {fileID: 1595944481704393654, guid: d3020f6be5989bb4bafb249bf9568f60, type: 3}
+      propertyPath: requestBodyTrackingPermissionOnStartup
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595944481704393654, guid: d3020f6be5989bb4bafb249bf9568f60, type: 3}
+      propertyPath: requestFaceTrackingPermissionOnStartup
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1636488948849783673, guid: d3020f6be5989bb4bafb249bf9568f60, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5335,6 +5343,14 @@ PrefabInstance:
     - target: {fileID: 1636488948849783673, guid: d3020f6be5989bb4bafb249bf9568f60, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134927311747451656, guid: d3020f6be5989bb4bafb249bf9568f60, type: 3}
+      propertyPath: CustomId
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156405465626972894, guid: d3020f6be5989bb4bafb249bf9568f60, type: 3}
+      propertyPath: CustomId
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
