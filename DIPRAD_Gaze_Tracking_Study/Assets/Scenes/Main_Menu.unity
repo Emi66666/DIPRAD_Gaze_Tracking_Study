@@ -4533,6 +4533,7 @@ GameObject:
   - component: {fileID: 1996031446}
   - component: {fileID: 1996031445}
   - component: {fileID: 1996031444}
+  - component: {fileID: 1996031447}
   m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
@@ -4679,6 +4680,31 @@ MonoBehaviour:
   _targetPoint: {fileID: 0}
   _faceTargetDirection: 0
   _eyeLevel: 0
+--- !u!114 &1996031447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996031439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9981709ae24fdf4fbfe39a242328bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idSource: 0
+  CustomId: 0b7e018b-d439-47b1-ba48-93d8c9a406dd
+  UpdateRate: 0.1
+  MeshName: table
+  PositionThreshold: 0.01
+  RotationThreshold: 0.1
+  ScaleThreshold: 0.1
+  IsController: 0
+  IsRight: 0
+  IdentifyControllerAtRuntime: 1
+  FallbackControllerType: 0
+  IdPool: {fileID: 0}
+  SyncWithPlayerGazeTick: 0
 --- !u!1 &1996344562
 GameObject:
   m_ObjectHideFlags: 0
