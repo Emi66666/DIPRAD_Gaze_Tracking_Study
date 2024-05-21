@@ -41,14 +41,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8616974049170017272}
     m_Modifications:
-    - target: {fileID: -4694655540848564073, guid: fe13458cbf0c00c4aa15f8bb3ac83868, type: 3}
-      propertyPath: _allowTeleport
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -314342540341777863, guid: fe13458cbf0c00c4aa15f8bb3ac83868, type: 3}
-      propertyPath: _reticleMode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5086110749316662430, guid: fe13458cbf0c00c4aa15f8bb3ac83868, type: 3}
       propertyPath: m_Name
       value: Structure_StallCover_03
@@ -115,10 +107,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8616974049170017272}
     m_Modifications:
-    - target: {fileID: -222626262105239723, guid: e0553baad856c7948b39fca0e2d9ff1d, type: 3}
-      propertyPath: _reticleMode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 823068951248955742, guid: e0553baad856c7948b39fca0e2d9ff1d, type: 3}
       propertyPath: m_Name
       value: Structure_MarketStallStructure
@@ -166,10 +154,6 @@ PrefabInstance:
     - target: {fileID: 823068951249384830, guid: e0553baad856c7948b39fca0e2d9ff1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4596593544096382355, guid: e0553baad856c7948b39fca0e2d9ff1d, type: 3}
-      propertyPath: _allowTeleport
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

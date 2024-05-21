@@ -2,8 +2,8 @@
 ***********SYSTEM************
 *****************************
 Unity Version:2023.2.17f1
-OS:Windows 11  (10.0.22000) 64bit
-System Time: 16.5.2024. 17:37:09
+OS:Windows 10  (10.0.19045) 64bit
+System Time: 21.5.2024. 11:26:28
 
 *****************************
 ***********PROJECT***********
@@ -80,23 +80,41 @@ Custom Dashboard: app.cognitive3d.com
 Texture Export Quality: 2
 Export Lowest LOD from LODGroup Components: True
 Scene Settings:
-  └─Map_Dreamscape_Village
-     ├─Scene Id: 
-     ├─Scene Path: Assets/Scenes/Map_Dreamscape_Village.unity
-     ├─Last Revision: 
-     ├─Version Number: 0
-     └─Version Id: 0
+  ├─Map_Dreamscape_Village
+  │  ├─Scene Id: 91c0738b-d146-41d6-a95a-fa160bce261a
+  │  ├─Scene Path: Assets/Scenes/Map_Dreamscape_Village.unity
+  │  ├─Last Revision: 05/16/2024 15:43:09
+  │  ├─Version Number: 1
+  │  └─Version Id: 6337
+  ├─Map_Amusement_Park
+  │  ├─Scene Id: 1bbd9a3a-7854-4f9e-b289-5e9ca4d6a3f5
+  │  ├─Scene Path: Assets/Scenes/Map_Amusement_Park.unity
+  │  ├─Last Revision: 05/16/2024 16:31:40
+  │  ├─Version Number: 1
+  │  └─Version Id: 6338
+  ├─Main_Menu
+  │  ├─Scene Id: d54a43d2-3942-422a-b18e-8426b994e777
+  │  ├─Scene Path: Assets/Scenes/Main_Menu.unity
+  │  ├─Last Revision: 05/20/2024 11:06:42
+  │  ├─Version Number: 4
+  │  └─Version Id: 6359
+  └─Main_Menu 1
+     ├─Scene Id: 9dfb21a9-cad2-470f-966b-9a8fb5863431
+     ├─Scene Path: Assets/Scenes/Main_Menu 1.unity
+     ├─Last Revision: 05/21/2024 07:52:38
+     ├─Version Number: 1
+     └─Version Id: 6366
 
 *****************************
 ********CURRENT SCENE********
 *****************************
 Scene Name: Map_Dreamscape_Village
-Scene Id: 
+Scene Id: 91c0738b-d146-41d6-a95a-fa160bce261a
 Scene Path: Assets/Scenes/Map_Dreamscape_Village.unity
-Last Revision: 
-Version Number: 0
-Version Id: 0
-Scene Size (mb): 237,52
+Last Revision: 05/16/2024 15:43:09
+Version Number: 1
+Version Id: 6337
+Scene Size (mb): 219,25
 Main Camera GameObject: CenterEyeAnchor
 Manager Initialize On Start: True
 Manager Startup Delay Time (s): 0
@@ -104,26 +122,114 @@ Manager Startup Delay Time (s): 0
 *****************************
 ****CURRENT SCENE OBJECTS****
 *****************************
-Dynamic Object Count: 2
+Dynamic Object Count: 3
   ├─RightHandAnchor
   │  ├─Mesh Name: righthandanchor
   │  ├─Has Collider: false
   │  ├─Has Children: true
   │  └─Has Child Colliders: false
-  └─LeftHandAnchor
-     ├─Mesh Name: lefthandanchor
+  ├─LeftHandAnchor
+  │  ├─Mesh Name: lefthandanchor
+  │  ├─Has Collider: false
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: false
+  └─Backup body.001
+     ├─Mesh Name: backup_body.001
      ├─Has Collider: false
-     ├─Has Children: true
-     └─Has Child Colliders: false
+     └─Has Children: false
 
 *****************************
 ********EXPORT FOLDER********
 *****************************
-/Cognitive3D_SceneExplorerExport (238mb)
-   /Map_Dreamscape_Village (237,52mb)
-      1028224520T_Terrain_03_CMain.png (7,74mb)
-      1028296518T_Terrain_01_CMain.png (7,56mb)
-      1028397737T_Terrain_02_CMain.png (7,81mb)
+/Cognitive3D_SceneExplorerExport (292mb)
+   /Dynamic (1,19mb)
+      /backup_body.001 (0,59mb)
+         backup_body.001.bin (0,58mb)
+         backup_body.001.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,00mb)
+      /robot_head (0,60mb)
+         371857150Left_EyeMain.png (0,00mb)
+         371857150MouthHappyMain.png (0,00mb)
+         371857150Right_EyeMain.png (0,00mb)
+         cvr_object_thumbnail.png (0,00mb)
+         robot_head.bin (0,58mb)
+         robot_head.gltf (0,01mb)
+   /Main_Menu (14,97mb)
+      1180938966controller_r_lo_BaseColorMain.png (0,59mb)
+      122199232touchController_albedoMain.png (0,07mb)
+      1327411633controller_l_lo_NormalBump.png (1,73mb)
+      1363314364MetaQuestTouchPlus_Left_BaseColor_AO_AlphaRoughnessMain.png (1,45mb)
+      1639048993controller_r_lo_NormalBump.png (1,77mb)
+      1764223827MetaQuestTouchPlus_Right_BaseColor_AO_AlphaRoughnessMain.png (1,46mb)
+      1814534556RainbowGradientMain.png (0,02mb)
+      1918152753MetaQuestTouchPlus_MetallicMetallicGloss.png (0,02mb)
+      1923169716MetaQuestTouchPlus_NormalsBump.png (0,71mb)
+      2116372573Reticle-CircleMain.png (0,01mb)
+      2120440669OculusQuestTouchControllerTextureMain.png (0,21mb)
+      371857150Left_EyeMain.png (0,00mb)
+      371857150MainMenuMain.png (0,00mb)
+      371857150MouthHappyMain.png (0,00mb)
+      371857150Right_EyeMain.png (0,00mb)
+      371857150SelectionCircleMain.png (0,01mb)
+      479365944OculusTouchForQuest2_AlbedoRoughnessMain.png (0,23mb)
+      768432320controller_l_lo_BaseColorMain.png (0,58mb)
+      debug.log (0,01mb)
+      scene.bin (5,60mb)
+      scene.gltf (0,32mb)
+      settings.json (0,00mb)
+      /screenshot (0,19mb)
+         screenshot.png (0,19mb)
+   /Main_Menu 1 (14,89mb)
+      1180938966controller_r_lo_BaseColorMain.png (0,59mb)
+      122199232touchController_albedoMain.png (0,07mb)
+      1327411633controller_l_lo_NormalBump.png (1,73mb)
+      1363314364MetaQuestTouchPlus_Left_BaseColor_AO_AlphaRoughnessMain.png (1,45mb)
+      1639048993controller_r_lo_NormalBump.png (1,77mb)
+      1764223827MetaQuestTouchPlus_Right_BaseColor_AO_AlphaRoughnessMain.png (1,46mb)
+      1814534556RainbowGradientMain.png (0,02mb)
+      1918152753MetaQuestTouchPlus_MetallicMetallicGloss.png (0,02mb)
+      1923169716MetaQuestTouchPlus_NormalsBump.png (0,71mb)
+      2116372573Reticle-CircleMain.png (0,01mb)
+      2120440669OculusQuestTouchControllerTextureMain.png (0,21mb)
+      371857150Left_EyeMain.png (0,00mb)
+      371857150MouthHappyMain.png (0,00mb)
+      371857150Right_EyeMain.png (0,00mb)
+      371857150SelectionCircleMain.png (0,01mb)
+      479365944OculusTouchForQuest2_AlbedoRoughnessMain.png (0,23mb)
+      768432320controller_l_lo_BaseColorMain.png (0,58mb)
+      debug.log (0,01mb)
+      scene.bin (5,60mb)
+      scene.gltf (0,32mb)
+      settings.json (0,00mb)
+      /screenshot (0,10mb)
+         screenshot.png (0,10mb)
+   /Map_Amusement_Park (41,52mb)
+      1124351310TextureMain.png (0,14mb)
+      1180938966controller_r_lo_BaseColorMain.png (0,59mb)
+      122199232touchController_albedoMain.png (0,07mb)
+      1327411633controller_l_lo_NormalBump.png (1,73mb)
+      1363314364MetaQuestTouchPlus_Left_BaseColor_AO_AlphaRoughnessMain.png (1,45mb)
+      1639048993controller_r_lo_NormalBump.png (1,77mb)
+      1764223827MetaQuestTouchPlus_Right_BaseColor_AO_AlphaRoughnessMain.png (1,46mb)
+      1814534556RainbowGradientMain.png (0,02mb)
+      1918152753MetaQuestTouchPlus_MetallicMetallicGloss.png (0,02mb)
+      1923169716MetaQuestTouchPlus_NormalsBump.png (0,71mb)
+      2116372573Reticle-CircleMain.png (0,01mb)
+      2120440669OculusQuestTouchControllerTextureMain.png (0,21mb)
+      371857150Main_MenuMain.png (0,00mb)
+      371857150SelectionCircleMain.png (0,01mb)
+      479365944OculusTouchForQuest2_AlbedoRoughnessMain.png (0,23mb)
+      768432320controller_l_lo_BaseColorMain.png (0,58mb)
+      debug.log (0,01mb)
+      scene.bin (29,40mb)
+      scene.gltf (2,82mb)
+      settings.json (0,00mb)
+      /screenshot (0,28mb)
+         screenshot.png (0,28mb)
+   /Map_Dreamscape_Village (219,25mb)
+      1028224520T_Terrain_03_CMain.png (2,10mb)
+      1028296518T_Terrain_01_CMain.png (2,07mb)
+      1028397737T_Terrain_02_CMain.png (2,11mb)
       1032697370T_SingleBed_CMain.png (1,09mb)
       1039729349T_Stonewall_01_CMain.png (1,13mb)
       1132707143T_StorageChest_CMain.png (0,41mb)
@@ -197,7 +303,10 @@ Dynamic Object Count: 2
       330120821T_Containers_CMain.png (1,31mb)
       362994279T_Barrel_CMain.png (1,31mb)
       369438454T_StoneBridge_Main_CMain.png (5,74mb)
+      371857150Left_EyeMain.png (0,00mb)
       371857150Main_MenuMain.png (0,00mb)
+      371857150MouthHappyMain.png (0,00mb)
+      371857150Right_EyeMain.png (0,00mb)
       371857150SelectionCircleMain.png (0,00mb)
       371857150VillageDemoTerrainMain.png (1,29mb)
       395544113T_Plaster_03_CMain.png (1,14mb)
@@ -236,6 +345,9 @@ Dynamic Object Count: 2
       910861957T_ExteriorLight_CMain.png (0,32mb)
       942651811T_DoubleBed_Cover_CMain.png (1,30mb)
       948061299T_Food_CMain.png (1,41mb)
-      scene.bin (89,79mb)
-      scene.gltf (8,79mb)
+      debug.log (0,01mb)
+      scene.bin (87,93mb)
+      scene.gltf (8,48mb)
       settings.json (0,00mb)
+      /screenshot (0,71mb)
+         screenshot.png (0,71mb)
