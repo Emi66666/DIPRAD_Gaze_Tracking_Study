@@ -9,6 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: M_VillageBirch_Leaves_01_Distant
   m_Shader: {fileID: 4800000, guid: 3183693b08ea2c3498466aeab483a701, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _ENABLEWIND_ON
@@ -19,6 +21,7 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -148,12 +151,12 @@ Material:
     - _WIndSwayIntensity: 1
     - _WindForce: 0.3
     - _WindIntensity: 5
-    - _WindJitterSpeed: 0.233
-    - _WindOffsetIntensity: 0.165
-    - _WindRustleSize: 0.1098
+    - _WindJitterSpeed: 0
+    - _WindOffsetIntensity: 0
+    - _WindRustleSize: 0
     - _WindScale: 0.2588236
     - _WindScroll: 0.05
-    - _WindScrollSpeed: 0.132
+    - _WindScrollSpeed: 0
     - _WindScrollSpeedD: 0.05
     - _WindSpeed: 0.5
     - _WindWavesScale: 0.25
@@ -172,5 +175,6 @@ Material:
     - _SSS: {r: 0.08388898, g: 0.11320752, b: 0, a: 0}
     - _SecondColor: {r: 0.33441228, g: 0.7264151, b: 0.16789784, a: 0}
     - _WindDIr: {r: 1, g: 0, b: 0, a: 0}
-    - _WindSwayDirection: {r: 1, g: 0, b: 0, a: 0}
+    - _WindSwayDirection: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

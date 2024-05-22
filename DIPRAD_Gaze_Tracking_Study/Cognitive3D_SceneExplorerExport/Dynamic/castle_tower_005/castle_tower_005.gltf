@@ -1,0 +1,233 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 3497,
+      "type": "VEC3",
+      "max": [
+        2.3500621318817139,
+        26.660451889038086,
+        2.3837754726409912
+      ],
+      "min": [
+        -2.3526561260223389,
+        -0.00039853705675341189,
+        -2.3842904567718506
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 3497,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 3497,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 3497,
+      "type": "VEC2",
+      "max": [
+        0.88665038347244263,
+        0.61282342672348022
+      ],
+      "min": [
+        0.27191483974456787,
+        0.021414756774902344
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 3497,
+      "type": "VEC2",
+      "max": [
+        0.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 60,
+      "type": "SCALAR",
+      "max": [
+        27.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5123,
+      "count": 9120,
+      "type": "SCALAR",
+      "max": [
+        3496.0
+      ],
+      "min": [
+        28.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "castle_tower_005.bin",
+      "byteLength": 214132
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 41964
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 41964,
+      "byteLength": 41964
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 83928,
+      "byteLength": 55952
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 139880,
+      "byteLength": 27976
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 167856,
+      "byteLength": 27976
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 195832,
+      "byteLength": 60
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 195892,
+      "byteLength": 18240
+    }
+  ],
+  "images": [
+    {
+      "uri": "1124351310TextureMain.png",
+      "name": "Texture"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "emission"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Main_Materials"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 5,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 6,
+          "material": 1
+        }
+      ],
+      "name": "castle_tower_005"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "castle_tower_005"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "castle_tower_005"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "1124351310TextureMain"
+    }
+  ]
+}

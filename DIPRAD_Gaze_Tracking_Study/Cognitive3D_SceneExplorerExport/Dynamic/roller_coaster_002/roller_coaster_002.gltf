@@ -1,0 +1,178 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 10398,
+      "type": "VEC3",
+      "max": [
+        11.208591461181641,
+        18.320394515991211,
+        16.698209762573242
+      ],
+      "min": [
+        -11.208550453186035,
+        -2.7204837351746392E-06,
+        -16.698209762573242
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 10398,
+      "type": "VEC3",
+      "max": [
+        0.99991822242736816,
+        0.99870729446411133,
+        0.99991858005523682
+      ],
+      "min": [
+        -0.99991893768310547,
+        -0.999893307685852,
+        -0.99991834163665771
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 10398,
+      "type": "VEC4",
+      "max": [
+        0.99999678134918213,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.99999749660491943,
+        -1.0,
+        -0.99999773502349854,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 10398,
+      "type": "VEC2",
+      "max": [
+        0.88213461637496948,
+        0.2851751446723938
+      ],
+      "min": [
+        0.27042362093925476,
+        0.11884284019470215
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 25908,
+      "type": "SCALAR",
+      "max": [
+        10397.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "roller_coaster_002.bin",
+      "byteLength": 550920
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 124776
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 124776,
+      "byteLength": 124776
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 249552,
+      "byteLength": 166368
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 415920,
+      "byteLength": 83184
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 499104,
+      "byteLength": 51816
+    }
+  ],
+  "images": [
+    {
+      "uri": "1124351310TextureMain.png",
+      "name": "Texture"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Main_Materials"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "roller_coaster_002"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "roller_coaster_002"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "roller_coaster_002"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "1124351310TextureMain"
+    }
+  ]
+}

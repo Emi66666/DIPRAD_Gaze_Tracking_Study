@@ -1,0 +1,178 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 1345,
+      "type": "VEC3",
+      "max": [
+        2.037050724029541,
+        5.241518497467041,
+        1.1029543876647949
+      ],
+      "min": [
+        -2.037050724029541,
+        -1.4222067079572298E-07,
+        -1.1029489040374756
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1345,
+      "type": "VEC3",
+      "max": [
+        0.99918657541275024,
+        0.9998776912689209,
+        0.99979478120803833
+      ],
+      "min": [
+        -0.9992637038230896,
+        -0.99889010190963745,
+        -0.99979418516159058
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1345,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.99998152256011963,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.9999995231628418,
+        -0.92193609476089478,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 1345,
+      "type": "VEC2",
+      "max": [
+        0.87578964233398438,
+        0.42797034978866577
+      ],
+      "min": [
+        0.3787921667098999,
+        0.23751372098922729
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 3447,
+      "type": "SCALAR",
+      "max": [
+        1344.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "monument_001.bin",
+      "byteLength": 71454
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 16140
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 16140,
+      "byteLength": 16140
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 32280,
+      "byteLength": 21520
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 53800,
+      "byteLength": 10760
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 64560,
+      "byteLength": 6894
+    }
+  ],
+  "images": [
+    {
+      "uri": "1124351310TextureMain.png",
+      "name": "Texture"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Main_Materials"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "monument_001"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "monument_001"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "monument_001"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "1124351310TextureMain"
+    }
+  ]
+}

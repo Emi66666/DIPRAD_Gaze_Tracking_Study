@@ -9,6 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: M_VillageFlowers_04
   m_Shader: {fileID: 4800000, guid: 3aa11b2c6fcaa3c418015917a2252433, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _HASSTEM_ON
   - _USEVERTEXCOLOR_ON
@@ -19,6 +21,7 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -61,10 +64,10 @@ Material:
     - _VertexColorGradient: 4
     - _VertexColorOffset: 0.1
     - _WindIntensity: 5
-    - _WindNoise01: 14.2
-    - _WindNoise01Multiplier: 0.1
-    - _WindNoise02: 16.8
-    - _WindNoise02Multiplier: 0.1
+    - _WindNoise01: 0
+    - _WindNoise01Multiplier: 0
+    - _WindNoise02: 0
+    - _WindNoise02Multiplier: 0
     - _WindScale: 0.366
     - _WindSpeed: 0.162
     - __dirty: 1
@@ -74,3 +77,4 @@ Material:
     - _ColorTint: {r: 1, g: 0.18933743, b: 0, a: 1}
     - _StemColor: {r: 0.21905886, g: 0.4433962, b: 0, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

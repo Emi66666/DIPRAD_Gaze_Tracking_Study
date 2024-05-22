@@ -1,0 +1,174 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC3",
+      "max": [
+        1075.9376220703125,
+        1075.9376220703125,
+        0.0
+      ],
+      "min": [
+        -1075.9376220703125,
+        -1075.9376220703125,
+        0.0
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC3",
+      "max": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "min": [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 4,
+      "type": "VEC2",
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5121,
+      "count": 6,
+      "type": "SCALAR",
+      "max": [
+        3.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "main_menu.bin",
+      "byteLength": 134
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 48
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 48,
+      "byteLength": 48
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 96,
+      "byteLength": 32
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 128,
+      "byteLength": 6
+    }
+  ],
+  "images": [
+    {
+      "uri": "371857150Main_MenuMain.png",
+      "name": "Main_Menu"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "name": "Hidden/Cognitive/Canvas Export Shader"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ],
+      "name": "Main Menu"
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1,
+        2,
+        3
+      ],
+      "name": "Main Menu"
+    },
+    {
+      "name": "Background"
+    },
+    {
+      "name": "Surface"
+    },
+    {
+      "mesh": 0,
+      "translation": [
+        0.0,
+        500.294922,
+        0.0
+      ],
+      "name": "Main Menu"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "main_menu"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "371857150Main_MenuMain"
+    }
+  ]
+}

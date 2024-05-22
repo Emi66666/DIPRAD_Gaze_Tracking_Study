@@ -9,6 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: M_VillageBirch_Leaves_Occluder
   m_Shader: {fileID: 4800000, guid: 418a5281d3f8eab4f99d89dfa09c84eb, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 0
@@ -17,6 +19,7 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -109,12 +112,12 @@ Material:
     - _WIndSwayFrequency: 1
     - _WIndSwayIntensity: 2
     - _WindIntensity: 5
-    - _WindJitterSpeed: 0.03
-    - _WindOffsetIntensity: 0.086
-    - _WindRustleSize: 0.035
+    - _WindJitterSpeed: 0
+    - _WindOffsetIntensity: 0
+    - _WindRustleSize: 0
     - _WindScale: 0.2588236
     - _WindScroll: 0.05
-    - _WindScrollSpeed: 0.03
+    - _WindScrollSpeed: 0
     - _WindScrollSpeedD: 0.05
     - _WindSpeed: 0.5
     - __dirty: 0
@@ -129,5 +132,6 @@ Material:
     - _FoliageEmissiveColor: {r: 0.77832055, g: 1, b: 0, a: 0}
     - _SSS: {r: 0.08388898, g: 0.11320752, b: 0, a: 0}
     - _WindDIr: {r: 1, g: 0, b: 0, a: 0}
-    - _WindSwayDirection: {r: 1, g: 0, b: 0, a: 0}
+    - _WindSwayDirection: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

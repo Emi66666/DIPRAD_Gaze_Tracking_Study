@@ -1,0 +1,178 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 1584,
+      "type": "VEC3",
+      "max": [
+        3.2679901123046875,
+        4.5151247978210449,
+        2.8598167896270752
+      ],
+      "min": [
+        -3.2679512500762939,
+        -4.3266612692605122E-07,
+        -2.8598167896270752
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1584,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1584,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.9988558292388916,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.99885737895965576,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 1584,
+      "type": "VEC2",
+      "max": [
+        0.82730758190155029,
+        0.57674837112426758
+      ],
+      "min": [
+        0.37677371501922607,
+        0.13075780868530273
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 4587,
+      "type": "SCALAR",
+      "max": [
+        1583.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "fountain_005.bin",
+      "byteLength": 85206
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 19008
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 19008,
+      "byteLength": 19008
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 38016,
+      "byteLength": 25344
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 63360,
+      "byteLength": 12672
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 76032,
+      "byteLength": 9174
+    }
+  ],
+  "images": [
+    {
+      "uri": "1124351310TextureMain.png",
+      "name": "Texture"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Main_Materials"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "fountain_005"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "fountain_005"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "fountain_005"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "1124351310TextureMain"
+    }
+  ]
+}

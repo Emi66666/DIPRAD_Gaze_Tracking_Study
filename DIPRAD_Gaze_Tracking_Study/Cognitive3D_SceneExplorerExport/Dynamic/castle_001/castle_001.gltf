@@ -1,0 +1,233 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 5717,
+      "type": "VEC3",
+      "max": [
+        8.3600263595581055,
+        6.7611522674560547,
+        5.2769408226013184
+      ],
+      "min": [
+        -10.120283126831055,
+        -0.20691463351249695,
+        -15.55709171295166
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 5717,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 5717,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 5717,
+      "type": "VEC2",
+      "max": [
+        0.88239568471908569,
+        0.60823380947113037
+      ],
+      "min": [
+        0.26808726787567139,
+        0.021414756774902344
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 5717,
+      "type": "VEC2",
+      "max": [
+        0.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 14421,
+      "type": "SCALAR",
+      "max": [
+        5698.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR",
+      "max": [
+        5716.0
+      ],
+      "min": [
+        5699.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "castle_001.bin",
+      "byteLength": 349066
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 68604
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 68604,
+      "byteLength": 68604
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 137208,
+      "byteLength": 91472
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 228680,
+      "byteLength": 45736
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 274416,
+      "byteLength": 45736
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 320152,
+      "byteLength": 28842
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 348994,
+      "byteLength": 72
+    }
+  ],
+  "images": [
+    {
+      "uri": "1124351310TextureMain.png",
+      "name": "Texture"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Main_Materials"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "emission"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 5,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 6,
+          "material": 1
+        }
+      ],
+      "name": "castle_001"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "castle_001"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "castle_001"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "1124351310TextureMain"
+    }
+  ]
+}

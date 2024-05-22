@@ -1,0 +1,233 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 8767,
+      "type": "VEC3",
+      "max": [
+        4.9622502326965332,
+        19.371931076049805,
+        6.4325995445251465
+      ],
+      "min": [
+        -5.0218944549560547,
+        -0.053636882454156876,
+        -6.367034912109375
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 8767,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 8767,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.99996483325958252,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.99978905916213989,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 8767,
+      "type": "VEC2",
+      "max": [
+        0.882766604423523,
+        0.60883092880249023
+      ],
+      "min": [
+        0.2719770073890686,
+        0.023697018623352051
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 8767,
+      "type": "VEC2",
+      "max": [
+        0.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 19269,
+      "type": "SCALAR",
+      "max": [
+        8366.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5123,
+      "count": 900,
+      "type": "SCALAR",
+      "max": [
+        8766.0
+      ],
+      "min": [
+        8367.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "castle_003.bin",
+      "byteLength": 531290
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 105204
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 105204,
+      "byteLength": 105204
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 210408,
+      "byteLength": 140272
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 350680,
+      "byteLength": 70136
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 420816,
+      "byteLength": 70136
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 490952,
+      "byteLength": 38538
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 529490,
+      "byteLength": 1800
+    }
+  ],
+  "images": [
+    {
+      "uri": "1124351310TextureMain.png",
+      "name": "Texture"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Main_Materials"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "emission"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 5,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 6,
+          "material": 1
+        }
+      ],
+      "name": "castle_003"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "castle_003"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "castle_003"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "1124351310TextureMain"
+    }
+  ]
+}

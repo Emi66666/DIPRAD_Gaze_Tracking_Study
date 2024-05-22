@@ -1,0 +1,198 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 226,
+      "type": "VEC3",
+      "max": [
+        0.534308671951294,
+        4.9036569595336914,
+        0.53431224822998047
+      ],
+      "min": [
+        -0.53430211544036865,
+        -5.7235510553255153E-08,
+        -0.53430098295211792
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 226,
+      "type": "VEC3",
+      "max": [
+        0.96591627597808838,
+        1.0,
+        0.96586531400680542
+      ],
+      "min": [
+        -0.96591305732727051,
+        -1.0,
+        -0.96586513519287109
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 226,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.8183702826499939,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.617712676525116,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 226,
+      "type": "VEC2",
+      "max": [
+        0.881876528263092,
+        0.28869062662124634
+      ],
+      "min": [
+        0.270174115896225,
+        0.1656070351600647
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 226,
+      "type": "VEC2",
+      "max": [
+        0.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5121,
+      "count": 564,
+      "type": "SCALAR",
+      "max": [
+        225.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "castle_tower_001.bin",
+      "byteLength": 13220
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 2712
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2712,
+      "byteLength": 2712
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5424,
+      "byteLength": 3616
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9040,
+      "byteLength": 1808
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 10848,
+      "byteLength": 1808
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12656,
+      "byteLength": 564
+    }
+  ],
+  "images": [
+    {
+      "uri": "1124351310TextureMain.png",
+      "name": "Texture"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Main_Materials"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 5,
+          "material": 0
+        }
+      ],
+      "name": "castle_tower_001"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "castle_tower_001"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "castle_tower_001"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "1124351310TextureMain"
+    }
+  ]
+}

@@ -10,9 +10,6 @@ public class Timer : MonoBehaviour
     private bool started = false;
     private bool finished = false;
 
-    public GameObject OVRCameraRig;
-    public Transform spawnPoint;
-
     public GameObject[] timerTexts;
 
     public TMP_Text[] timeTextFields;
@@ -74,7 +71,6 @@ public class Timer : MonoBehaviour
         finished = true;
         timer = 0.0f;
 
-        OVRCameraRig.transform.position = spawnPoint.position;
         // TODO: Teleport player back after timer expires
     }
 }

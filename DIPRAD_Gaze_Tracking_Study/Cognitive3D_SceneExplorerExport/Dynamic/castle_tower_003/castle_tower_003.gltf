@@ -1,0 +1,233 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 958,
+      "type": "VEC3",
+      "max": [
+        1.2071923017501831,
+        14.077646255493164,
+        1.2071151733398438
+      ],
+      "min": [
+        -1.207033634185791,
+        -0.0097864437848329544,
+        -1.2071083784103394
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 958,
+      "type": "VEC3",
+      "max": [
+        0.99964737892150879,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.99964702129364014,
+        -1.0,
+        -0.99449425935745239
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 958,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.9981997013092041,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.99819809198379517,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 958,
+      "type": "VEC2",
+      "max": [
+        0.87747681140899658,
+        0.61184769868850708
+      ],
+      "min": [
+        0.270174115896225,
+        0.11676526069641113
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 958,
+      "type": "VEC2",
+      "max": [
+        0.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 2358,
+      "type": "SCALAR",
+      "max": [
+        925.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5123,
+      "count": 72,
+      "type": "SCALAR",
+      "max": [
+        957.0
+      ],
+      "min": [
+        926.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "castle_tower_003.bin",
+      "byteLength": 58508
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 11496
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 11496,
+      "byteLength": 11496
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 22992,
+      "byteLength": 15328
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 38320,
+      "byteLength": 7664
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 45984,
+      "byteLength": 7664
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 53648,
+      "byteLength": 4716
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 58364,
+      "byteLength": 144
+    }
+  ],
+  "images": [
+    {
+      "uri": "1124351310TextureMain.png",
+      "name": "Texture"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Main_Materials"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "emission"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 5,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 6,
+          "material": 1
+        }
+      ],
+      "name": "castle_tower_003"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "castle_tower_003"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "castle_tower_003"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "1124351310TextureMain"
+    }
+  ]
+}
