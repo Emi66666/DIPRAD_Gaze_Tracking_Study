@@ -130,7 +130,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         }
     }
 
-    [PunRPC]
     public void RemoveNetworkText()
     {
         Debug.Log("Game starting...");

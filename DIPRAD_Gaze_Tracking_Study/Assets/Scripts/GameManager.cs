@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public GameObject startAreaColliders;
 
     private PhotonView _photonView;
+    public NetworkManager networkManager;
+    public Timer timer;
 
     void Awake()
     {
@@ -23,6 +25,18 @@ public class GameManager : MonoBehaviour
             _photonView.RPC("DeactivateStartAreaColliders", RpcTarget.All);
             _photonView.RPC("StartTimer", RpcTarget.All);
         }
+    }
+
+    [PunRPC]
+    public void RemoveNetworkText()
+    {
+        networkManager.RemoveNetworkText();
+    }
+
+    [PunRPC]
+    public void StartTimer()
+    {
+        timer.StartTimer();
     }
 
     [PunRPC]

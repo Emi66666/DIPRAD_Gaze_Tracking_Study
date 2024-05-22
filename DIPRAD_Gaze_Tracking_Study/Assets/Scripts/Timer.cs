@@ -24,7 +24,6 @@ public class Timer : MonoBehaviour
         _photonView = GetComponent<PhotonView>();
     }
 
-    [PunRPC]
     public void StartTimer()
     {
         handMenuTimerText.SetActive(true);
