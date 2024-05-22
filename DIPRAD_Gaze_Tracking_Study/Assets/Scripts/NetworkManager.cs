@@ -22,6 +22,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     //public GameObject gamemodeText;
     //public GameObject gamemodeDropdown;
     public GameObject ownerStartingText;
+    public GameObject handMenuNetworkText;
 
     public GameObject player;
 
@@ -129,9 +130,15 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         }
     }
 
-    public void StartGame()
+    [PunRPC]
+    public void RemoveNetworkText()
     {
         Debug.Log("Game starting...");
+
+        ownerStartingText.SetActive(false);
+        startButton.SetActive(false);
+        handMenuNetworkText.SetActive(false);
+
         //int mapValue = mapDropdown.GetComponent<TMP_Dropdown>().value;
         //int gamemodeValue = gamemodeDropdown.GetComponent<TMP_Dropdown>().value;
 

@@ -13,6 +13,8 @@ public class Timer : MonoBehaviour
     public GameObject OVRCameraRig;
     public Transform spawnPoint;
 
+    public GameObject handMenuTimerText;
+
     public TMP_Text[] timeTextFields;
 
     private PhotonView _photonView;
@@ -22,8 +24,10 @@ public class Timer : MonoBehaviour
         _photonView = GetComponent<PhotonView>();
     }
 
+    [PunRPC]
     public void StartTimer()
     {
+        handMenuTimerText.SetActive(true);
         started = true;
     }
 
