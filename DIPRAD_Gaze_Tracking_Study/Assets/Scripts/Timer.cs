@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour
     public GameObject OVRCameraRig;
     public Transform spawnPoint;
 
-    public GameObject handMenuTimerText;
+    public GameObject[] timerTexts;
 
     public TMP_Text[] timeTextFields;
 
@@ -26,7 +26,10 @@ public class Timer : MonoBehaviour
 
     public void StartTimer()
     {
-        handMenuTimerText.SetActive(true);
+        foreach (var timerText in timerTexts)
+        {
+            timerText.SetActive(true);
+        }
         started = true;
     }
 
