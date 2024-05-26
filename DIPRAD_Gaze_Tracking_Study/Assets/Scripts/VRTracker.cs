@@ -44,6 +44,7 @@ public class VRTracker : MonoBehaviour
             {
                 item.enabled = false;
             }
+            head.Find("Robot Head/Backup body.001/Backup body.001").gameObject.SetActive(false);
         }
     }
 
