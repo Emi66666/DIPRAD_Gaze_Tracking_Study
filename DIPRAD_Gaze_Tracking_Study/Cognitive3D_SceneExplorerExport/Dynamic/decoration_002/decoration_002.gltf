@@ -1,0 +1,178 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 1958,
+      "type": "VEC3",
+      "max": [
+        8.1779060363769531,
+        12.2701416015625,
+        0.96528351306915283
+      ],
+      "min": [
+        -8.1778993606567383,
+        -1.2584091564349364E-06,
+        -0.96531277894973755
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1958,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1958,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 1958,
+      "type": "VEC2",
+      "max": [
+        0.87839919328689575,
+        0.47761821746826172
+      ],
+      "min": [
+        0.020191539078950882,
+        0.17304271459579468
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 5460,
+      "type": "SCALAR",
+      "max": [
+        1957.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "decoration_002.bin",
+      "byteLength": 104904
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 23496
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 23496,
+      "byteLength": 23496
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 46992,
+      "byteLength": 31328
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 78320,
+      "byteLength": 15664
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 93984,
+      "byteLength": 10920
+    }
+  ],
+  "images": [
+    {
+      "uri": "1124351310TextureMain.png",
+      "name": "Texture"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Main_Materials"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "decoration_002"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "decoration_002"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "decoration_002"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "1124351310TextureMain"
+    }
+  ]
+}

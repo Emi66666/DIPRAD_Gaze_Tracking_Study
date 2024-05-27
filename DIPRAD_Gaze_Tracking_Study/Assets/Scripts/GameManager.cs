@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using TMPro;
+using Unity.VisualScripting;
 
 [RequireComponent(typeof(PhotonView))]
 public class GameManager : MonoBehaviour
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
     public TMP_Dropdown gamemodePicker;
 
     public List<RawImage> pictures;
+    private List<RawImage> picturesCopy;
     public List<GameObject> pictureColliders;
 
     public GameObject OVRCameraRig;
@@ -72,6 +74,8 @@ public class GameManager : MonoBehaviour
         fileName = "/GazeTracking_" + System.DateTime.Now.ToString("MM-dd-yy_hh-mm-ss") + ".txt";
         path = Application.persistentDataPath + fileName;
         sr = File.CreateText(path);
+
+        picturesCopy = new List<RawImage>(pictures);
     }
 
     public void StartGame()
@@ -110,6 +114,9 @@ public class GameManager : MonoBehaviour
 
     public void NextPictureNumber()
     {
+        Debug.Log("[TEST] Next Picture Number");
+
+        timer.PauseTimer();
         foreach (var otherPlayerWaitingText in otherPlayerWaitingTexts)
         {
             otherPlayerWaitingText.SetActive(false);
@@ -125,6 +132,7 @@ public class GameManager : MonoBehaviour
     [PunRPC]
     public void NextPicture(int randomNumber)
     {
+        Debug.Log("[TEST] Next picture");
         foreach (var pictureTimerText in pictureTimerTexts)
         {
             pictureTimerText.SetActive(false);
@@ -177,7 +185,7 @@ public class GameManager : MonoBehaviour
         pictureCollider.GetComponent<BoxCollider>().enabled = true;
 
         sr.WriteLine();
-        sr.WriteLine("Picture " + (pictures.IndexOf(picture) + 1) + ":");
+        sr.WriteLine("Picture " + (picturesCopy.IndexOf(picture) + 1) + ":");
     }
 
     public void SubmitAnswers()
@@ -228,7 +236,8 @@ public class GameManager : MonoBehaviour
 
     public void FindPictureCollider()
     {
-        foreach(var otherPlayerAnswer in otherPlayerAnswers)
+        Debug.Log("[TEST] Find Picture Collider");
+        foreach (var otherPlayerAnswer in otherPlayerAnswers)
         {
             otherPlayerAnswer.SetActive(false);
         }
@@ -243,8 +252,7 @@ public class GameManager : MonoBehaviour
 
     public void PictureNotFound()
     {
-        sr.WriteLine("Time: " + timeToFindPicture);
-        sr.WriteLine("Points: 0");
+        Debug.Log("[TEST] Picture not found in GameManager");
 
         lastPictureCollider.SetActive(false);
 
@@ -252,19 +260,20 @@ public class GameManager : MonoBehaviour
         {
             pictureTimerText.SetActive(false);
         }
-        foreach (var otherPlayerWaitingText in otherPlayerWaitingTexts)
-        {
-            otherPlayerWaitingText.SetActive(true);
-        }
 
-        _photonView.RPC("PictureColliderFound", RpcTarget.All, 0f);
-        
-        sr.WriteLine("Time: " + (timeToFindPicture - timer.timer));
+        sr.WriteLine("Time: " + timeToFindPicture + " (Not found)");
         sr.WriteLine("Points: " + 0f);
+
+        _photonView.RPC("PictureColliderFound", RpcTarget.All, 0);
     }
 
     void EndGame()
     {
+        Debug.Log("[TEST] End game");
+
+        timer.PauseTimer();
+        OVRCameraRig.transform.position = spawnPoint.position;
+
         foreach (var pictureMenu in pictureMenus)
         {
             pictureMenu.SetActive(false);
@@ -281,11 +290,24 @@ public class GameManager : MonoBehaviour
         finalPoints[0].text = playerOnePoints.ToString();
         finalPoints[1].text = playerTwoPoints.ToString();
 
+        if (PhotonNetwork.IsMasterClient)
+        {
+            sr.WriteLine();
+            sr.WriteLine("Total points: " + playerOnePoints);
+        }
+        else
+        {
+            sr.WriteLine();
+            sr.WriteLine("Total points: " + playerTwoPoints);
+        }
+
         sr.Close();
     }
 
     public void PlayerFoundPictureCollider()
     {
+        Debug.Log("[TEST] Player found picture collider");
+
         startAreaColliders.SetActive(true);
         OVRCameraRig.transform.position = spawnPoint.position;
 
@@ -308,13 +330,15 @@ public class GameManager : MonoBehaviour
 
         _photonView.RPC("PictureColliderFound", RpcTarget.All, pointsAwarded);
         
-        sr.WriteLine("Time: " + (timer.timer / timeToFindPicture));
+        sr.WriteLine("Time: " + (timeToFindPicture - timer.timer));
         sr.WriteLine("Points: " + pointsAwarded);
     }
 
     [PunRPC]
     public void PictureColliderFound(int pointsAwarded)
     {
+        Debug.Log("[TEST] Picture collider found");
+
         pictureCollidersFound++;
 
         if (gamemode == Gamemode.COMPETITIVE)

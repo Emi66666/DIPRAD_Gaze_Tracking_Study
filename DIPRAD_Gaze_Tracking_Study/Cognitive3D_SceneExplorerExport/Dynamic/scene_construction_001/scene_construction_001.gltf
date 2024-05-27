@@ -1,0 +1,178 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 2760,
+      "type": "VEC3",
+      "max": [
+        4.1937985420227051,
+        5.1092519760131836,
+        0.44197836518287659
+      ],
+      "min": [
+        -4.1938085556030273,
+        -7.2007274809493538E-08,
+        -0.44196775555610657
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2760,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 2760,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.80594938993453979,
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 2760,
+      "type": "VEC2",
+      "max": [
+        0.88557827472686768,
+        0.42595785856246948
+      ],
+      "min": [
+        0.87957084178924561,
+        0.27184176445007324
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 5184,
+      "type": "SCALAR",
+      "max": [
+        2759.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "scene_construction_001.bin",
+      "byteLength": 142848
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 33120
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 33120,
+      "byteLength": 33120
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 66240,
+      "byteLength": 44160
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 110400,
+      "byteLength": 22080
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 132480,
+      "byteLength": 10368
+    }
+  ],
+  "images": [
+    {
+      "uri": "1124351310TextureMain.png",
+      "name": "Texture"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Main_Materials"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "scene_construction_001"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "scene_construction_001"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "scene_construction_001"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "1124351310TextureMain"
+    }
+  ]
+}

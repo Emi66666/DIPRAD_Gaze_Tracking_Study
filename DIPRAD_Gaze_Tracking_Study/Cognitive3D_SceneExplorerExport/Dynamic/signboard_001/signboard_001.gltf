@@ -1,0 +1,212 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 2680,
+      "type": "VEC3",
+      "max": [
+        5.2792892456054688,
+        0.49603548645973206,
+        0.0779704749584198
+      ],
+      "min": [
+        -5.1879339218139648,
+        -0.49747541546821594,
+        -0.10756781697273254
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2680,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 2680,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.70711785554885864,
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        -1.0,
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 2680,
+      "type": "VEC2",
+      "max": [
+        0.82121771574020386,
+        0.32860112190246582
+      ],
+      "min": [
+        0.019637174904346466,
+        0.3159903883934021
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 5520,
+      "type": "SCALAR",
+      "max": [
+        2599.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 144,
+      "type": "SCALAR",
+      "max": [
+        2679.0
+      ],
+      "min": [
+        2600.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "signboard_001.bin",
+      "byteLength": 139968
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 32160
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 32160,
+      "byteLength": 32160
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 64320,
+      "byteLength": 42880
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 107200,
+      "byteLength": 21440
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 128640,
+      "byteLength": 11040
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 139680,
+      "byteLength": 288
+    }
+  ],
+  "images": [
+    {
+      "uri": "1124351310TextureMain.png",
+      "name": "Texture"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "emission"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Main_Materials"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ],
+      "name": "signboard_001"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "signboard_001"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "signboard_001"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "1124351310TextureMain"
+    }
+  ]
+}

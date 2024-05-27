@@ -1,0 +1,178 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 731,
+      "type": "VEC3",
+      "max": [
+        1.668124794960022,
+        5.28455924987793,
+        1.4566704034805298
+      ],
+      "min": [
+        -1.6680957078933716,
+        -1.5157191057824093E-07,
+        -1.4566597938537598
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 731,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 731,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.99620193243026733,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 731,
+      "type": "VEC2",
+      "max": [
+        0.93000894784927368,
+        0.68937551975250244
+      ],
+      "min": [
+        0.27021393179893494,
+        0.02042543888092041
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 2001,
+      "type": "SCALAR",
+      "max": [
+        730.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "stall_006.bin",
+      "byteLength": 39090
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 8772
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8772,
+      "byteLength": 8772
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 17544,
+      "byteLength": 11696
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 29240,
+      "byteLength": 5848
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 35088,
+      "byteLength": 4002
+    }
+  ],
+  "images": [
+    {
+      "uri": "1124351310TextureMain.png",
+      "name": "Texture"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Main_Materials"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "stall_006"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "stall_006"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "stall_006"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "1124351310TextureMain"
+    }
+  ]
+}

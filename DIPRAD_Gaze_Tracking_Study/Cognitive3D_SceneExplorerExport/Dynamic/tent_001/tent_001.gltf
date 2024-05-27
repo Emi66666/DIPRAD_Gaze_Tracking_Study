@@ -1,0 +1,178 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 3939,
+      "type": "VEC3",
+      "max": [
+        9.0037298202514648,
+        13.431893348693848,
+        4.2080307006835938
+      ],
+      "min": [
+        -9.0037298202514648,
+        -6.3446668718825094E-07,
+        -4.2080192565917969
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 3939,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 3939,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 3939,
+      "type": "VEC2",
+      "max": [
+        0.88747960329055786,
+        0.32928365468978882
+      ],
+      "min": [
+        0.01552581787109375,
+        0.017747640609741211
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 9222,
+      "type": "SCALAR",
+      "max": [
+        3938.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "tent_001.bin",
+      "byteLength": 207516
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 47268
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 47268,
+      "byteLength": 47268
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 94536,
+      "byteLength": 63024
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 157560,
+      "byteLength": 31512
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 189072,
+      "byteLength": 18444
+    }
+  ],
+  "images": [
+    {
+      "uri": "1124351310TextureMain.png",
+      "name": "Texture"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Main_Materials"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "tent_001"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "tent_001"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "tent_001"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "1124351310TextureMain"
+    }
+  ]
+}

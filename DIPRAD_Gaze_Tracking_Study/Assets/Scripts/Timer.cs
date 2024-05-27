@@ -39,6 +39,7 @@ public class Timer : MonoBehaviour
 
     public void StartPictureTimer(float time)
     {
+        Debug.Log("[TEST] Start picture timer");
         timer = time;
         foreach (var timerText in pictureTimerTexts)
         {
@@ -46,6 +47,12 @@ public class Timer : MonoBehaviour
         }
         started = true;
         finished = false;
+    }
+
+    public void PauseTimer()
+    {
+        Debug.Log("[TEST] Pause timer");
+        started = false;
     }
 
     void Update()
@@ -58,12 +65,14 @@ public class Timer : MonoBehaviour
 
                 if (timer <= 0.0f)
                 {
+                    timer = 0.0f;
                     if (exploration && PhotonNetwork.IsMasterClient)
                     {
                         _photonView.RPC("ExplorationEnded", RpcTarget.All);
                     }
                     else if (!exploration && !gameManager.pictureFound)
                     {
+                        Debug.Log("[TEST] Timer ended, picture not found");
                         PictureNotFound();
                     }
                 }
@@ -74,6 +83,7 @@ public class Timer : MonoBehaviour
 
     void PictureNotFound()
     {
+        Debug.Log("[TEST] Picture Not Found in Timer");
         finished = true;
         timer = 0.0f;
         gameManager.PictureNotFound();

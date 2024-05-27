@@ -1,0 +1,212 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 1434,
+      "type": "VEC3",
+      "max": [
+        1.688815712928772,
+        5.8851633071899414,
+        1.4171242713928223
+      ],
+      "min": [
+        -2.0935161113739014,
+        -1.9212984625482932E-07,
+        -1.4171285629272461
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1434,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.99994802474975586,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1434,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.99965119361877441,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 1434,
+      "type": "VEC2",
+      "max": [
+        0.6349063515663147,
+        0.79061853885650635
+      ],
+      "min": [
+        0.016609162092208862,
+        0.019299328327178955
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 3276,
+      "type": "SCALAR",
+      "max": [
+        1177.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 432,
+      "type": "SCALAR",
+      "max": [
+        1433.0
+      ],
+      "min": [
+        1178.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "attraction_5_002.bin",
+      "byteLength": 76248
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 17208
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 17208,
+      "byteLength": 17208
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 34416,
+      "byteLength": 22944
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 57360,
+      "byteLength": 11472
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 68832,
+      "byteLength": 6552
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 75384,
+      "byteLength": 864
+    }
+  ],
+  "images": [
+    {
+      "uri": "1124351310TextureMain.png",
+      "name": "Texture"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Main_Materials"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "emission"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        }
+      ],
+      "name": "attraction_5_002"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "attraction_5_002"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "attraction_5_002"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "1124351310TextureMain"
+    }
+  ]
+}

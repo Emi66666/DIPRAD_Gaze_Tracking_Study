@@ -1,0 +1,178 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 2225,
+      "type": "VEC3",
+      "max": [
+        2.7319197654724121,
+        23.744045257568359,
+        13.868983268737793
+      ],
+      "min": [
+        -2.7319469451904297,
+        -0.059253796935081482,
+        -13.868983268737793
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2225,
+      "type": "VEC3",
+      "max": [
+        0.99974006414413452,
+        0.9999997615814209,
+        0.99974137544631958
+      ],
+      "min": [
+        -0.99974018335342407,
+        -0.9999392032623291,
+        -0.99727565050125122
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 2225,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.99981957674026489,
+        0.99999880790710449,
+        1.0
+      ],
+      "min": [
+        -0.99651283025741577,
+        -0.7354317307472229,
+        -0.99998998641967773,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 2225,
+      "type": "VEC2",
+      "max": [
+        0.89497846364974976,
+        0.42384028434753418
+      ],
+      "min": [
+        0.024994969367980957,
+        0.12480151653289795
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 10842,
+      "type": "SCALAR",
+      "max": [
+        2224.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "dinosaur_006.bin",
+      "byteLength": 128484
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 26700
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 26700,
+      "byteLength": 26700
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 53400,
+      "byteLength": 35600
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 89000,
+      "byteLength": 17800
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 106800,
+      "byteLength": 21684
+    }
+  ],
+  "images": [
+    {
+      "uri": "1124351310TextureMain.png",
+      "name": "Texture"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.5
+      },
+      "name": "Main_Materials"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "dinosaur_006"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "dinosaur_006"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "dinosaur_006"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "1124351310TextureMain"
+    }
+  ]
+}
