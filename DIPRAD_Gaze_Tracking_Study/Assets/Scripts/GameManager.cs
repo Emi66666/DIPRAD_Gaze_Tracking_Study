@@ -360,13 +360,13 @@ public class GameManager : MonoBehaviour
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            points[0].text = string.Format("{}", currentPlayerPoints);
-            points[1].text = string.Format("{}", otherPlayerPoints);
+            points[0].text = currentPlayerPoints.ToString();
+            points[1].text = otherPlayerPoints.ToString();
         }
         else
         {
-            points[1].text = string.Format("{}", currentPlayerPoints);
-            points[0].text = string.Format("{}", otherPlayerPoints);
+            points[1].text = currentPlayerPoints.ToString();
+            points[0].text = otherPlayerPoints.ToString();
         }
     }
 
