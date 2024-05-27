@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
 
     public bool pictureFound;
 
-    public GameObject lastPictureCollider;
+    private GameObject lastPictureCollider;
 
     void Awake()
     {
@@ -172,7 +172,9 @@ public class GameManager : MonoBehaviour
         {
             menuPicture.texture = picture.texture;
         }
-        pictureCollider.gameObject.SetActive(true);
+        
+        pictureCollider.GetComponent<MeshRenderer>().enabled = false;
+        pictureCollider.GetComponent<CapsuleCollider>().enabled = false;
 
         sr.WriteLine();
         sr.WriteLine("Picture " + (pictures.IndexOf(picture) + 1) + ":");
