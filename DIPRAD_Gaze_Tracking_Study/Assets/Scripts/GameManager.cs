@@ -173,8 +173,8 @@ public class GameManager : MonoBehaviour
             menuPicture.texture = picture.texture;
         }
         
-        pictureCollider.GetComponent<MeshRenderer>().enabled = false;
-        pictureCollider.GetComponent<CapsuleCollider>().enabled = false;
+        pictureCollider.GetComponent<MeshRenderer>().enabled = true;
+        pictureCollider.GetComponent<CapsuleCollider>().enabled = true;
 
         sr.WriteLine();
         sr.WriteLine("Picture " + (pictures.IndexOf(picture) + 1) + ":");
