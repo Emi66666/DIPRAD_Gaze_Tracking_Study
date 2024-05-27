@@ -307,29 +307,27 @@ public class GameManager : MonoBehaviour
         }
 
         pictureFound = true;
-        _photonView.RPC("PictureColliderFound", RpcTarget.All);
-    }
 
-    [PunRPC]
-    public void PictureColliderFound()
-    {
-        pictureCollidersFound++;
         int pointsAwarded = (int) (timer.timer / timeToFindPicture) * 1000;
-
         if (gamemode == Gamemode.COLLABORATIVE)
         {
             pointsAwarded /= 2;
         }
 
-        if (_photonView.IsMine)
-        {
-            sr.WriteLine("Time: " + (timer.timer / timeToFindPicture));
-            sr.WriteLine("Points: " + pointsAwarded);
-        }
+        _photonView.RPC("PictureColliderFound", RpcTarget.All, pointsAwarded);
+        
+        sr.WriteLine("Time: " + (timer.timer / timeToFindPicture));
+        sr.WriteLine("Points: " + pointsAwarded);
+    }
+
+    [PunRPC]
+    public void PictureColliderFound(int pointsAwarded)
+    {
+        pictureCollidersFound++;
 
         if (gamemode == Gamemode.COMPETITIVE)
         {
-            if (_photonView.IsMine)
+            if (PhotonNetwork.IsMasterClient)
             {
                 currentPlayerPoints += pointsAwarded;
             }
@@ -367,16 +365,8 @@ public class GameManager : MonoBehaviour
 
     public void UpdatePlayerPoints()
     {
-        if (PhotonNetwork.IsMasterClient)
-        {
-            points[0].text = currentPlayerPoints.ToString();
-            points[1].text = otherPlayerPoints.ToString();
-        }
-        else
-        {
-            points[1].text = currentPlayerPoints.ToString();
-            points[0].text = otherPlayerPoints.ToString();
-        }
+        points[0].text = currentPlayerPoints.ToString();
+        points[1].text = otherPlayerPoints.ToString();
     }
 
     [PunRPC]
