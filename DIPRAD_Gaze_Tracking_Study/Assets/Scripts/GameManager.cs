@@ -54,8 +54,8 @@ public class GameManager : MonoBehaviour
     public GameObject[] gameEndMenus;
     public TMP_Text[] finalPoints;
 
-    private int currentPlayerPoints;
-    private int otherPlayerPoints;
+    private int playerOnePoints;
+    private int playerTwoPoints;
     private int togetherPlayerPoints;
 
     public bool pictureFound;
@@ -278,16 +278,8 @@ public class GameManager : MonoBehaviour
             otherPlayerWaitingText.SetActive(false);
         }
 
-        if (PhotonNetwork.IsMasterClient)
-        {
-            finalPoints[0].text = string.Format("{}", currentPlayerPoints);
-            finalPoints[1].text = string.Format("{}", otherPlayerPoints);
-        }
-        else
-        {
-            finalPoints[1].text = string.Format("{}", currentPlayerPoints);
-            finalPoints[0].text = string.Format("{}", otherPlayerPoints);
-        }
+        finalPoints[0].text = string.Format("{}", playerOnePoints);
+        finalPoints[1].text = string.Format("{}", playerTwoPoints);
 
         sr.Close();
     }
@@ -308,7 +300,7 @@ public class GameManager : MonoBehaviour
 
         pictureFound = true;
 
-        int pointsAwarded = (int) (timer.timer / timeToFindPicture) * 1000;
+        int pointsAwarded = (int) ((timer.timer / timeToFindPicture) * 10000);
         if (gamemode == Gamemode.COLLABORATIVE)
         {
             pointsAwarded /= 2;
@@ -329,18 +321,18 @@ public class GameManager : MonoBehaviour
         {
             if (PhotonNetwork.IsMasterClient)
             {
-                currentPlayerPoints += pointsAwarded;
+                playerOnePoints += pointsAwarded;
             }
             else
             {
-                otherPlayerPoints += pointsAwarded;
+                playerTwoPoints += pointsAwarded;
             }
         }
         else
         {
             togetherPlayerPoints += pointsAwarded;
-            currentPlayerPoints = togetherPlayerPoints;
-            otherPlayerPoints = togetherPlayerPoints;
+            playerOnePoints = togetherPlayerPoints;
+            playerTwoPoints = togetherPlayerPoints;
         }
 
         UpdatePlayerPoints();
@@ -365,8 +357,8 @@ public class GameManager : MonoBehaviour
 
     public void UpdatePlayerPoints()
     {
-        points[0].text = currentPlayerPoints.ToString();
-        points[1].text = otherPlayerPoints.ToString();
+        points[0].text = playerOnePoints.ToString();
+        points[1].text = playerTwoPoints.ToString();
     }
 
     [PunRPC]
