@@ -119,6 +119,11 @@ public class GameManager : MonoBehaviour
     [PunRPC]
     public void NextPicture(int randomNumber)
     {
+        foreach (var pictureTimerText in pictureTimerTexts)
+        {
+            pictureTimerText.SetActive(false);
+        }
+
         answersSubmitted = 0;
         pictureCollidersFound = 0;
         pictureFound = false;
@@ -159,7 +164,7 @@ public class GameManager : MonoBehaviour
         {
             menuPicture.texture = picture.texture;
         }
-        pictureCollider.SetActive(true);
+        pictureCollider.GetComponentInParent<Transform>().gameObject.SetActive(true);
 
         sr.WriteLine();
         sr.WriteLine("Picture " + (pictures.IndexOf(picture) + 1) + ":");
@@ -213,6 +218,10 @@ public class GameManager : MonoBehaviour
 
     public void FindPictureCollider()
     {
+        foreach(var otherPlayerAnswer in otherPlayerAnswers)
+        {
+            otherPlayerAnswer.SetActive(false);
+        }
         startAreaColliders.SetActive(false);
 
         foreach (var pictureTimerText in pictureTimerTexts)
