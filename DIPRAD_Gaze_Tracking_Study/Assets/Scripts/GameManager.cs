@@ -79,9 +79,14 @@ public class GameManager : MonoBehaviour
             _photonView.RPC("RemoveNetworkText", RpcTarget.All);
             _photonView.RPC("DeactivateStartAreaColliders", RpcTarget.All);
             _photonView.RPC("StartTimer", RpcTarget.All);
+            _photonView.RPC("SetGamemode", RpcTarget.All, (Gamemode) gamemodePicker.value);
         }
+    }
 
-        gamemode = (Gamemode) gamemodePicker.value;
+    [PunRPC]
+    public void SetGamemode(Gamemode gamemode)
+    {
+        this.gamemode = gamemode;
         sr.WriteLine("Gamemode: " + gamemode);
     }
 
