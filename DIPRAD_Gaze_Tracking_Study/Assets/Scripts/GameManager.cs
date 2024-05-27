@@ -110,6 +110,10 @@ public class GameManager : MonoBehaviour
 
     public void NextPictureNumber()
     {
+        foreach (var otherPlayerWaitingText in otherPlayerWaitingTexts)
+        {
+            otherPlayerWaitingText.SetActive(false);
+        }
         if (PhotonNetwork.IsMasterClient)
         {
             int pictureNumber = pictures.Count;
@@ -266,6 +270,10 @@ public class GameManager : MonoBehaviour
         foreach (var gameEndMenu in gameEndMenus)
         {
             gameEndMenu.SetActive(true);
+        }
+        foreach (var otherPlayerWaitingText in otherPlayerWaitingTexts)
+        {
+            otherPlayerWaitingText.SetActive(false);
         }
 
         if (PhotonNetwork.IsMasterClient)
