@@ -41,11 +41,8 @@ public class Timer : MonoBehaviour
             if (!finished)
             {
                 timer -= Time.deltaTime;
-            }
 
-            ShowOnGUI();
-
-            if (timer <= 0.0f)
+                if (timer <= 0.0f)
             {
                 if (exploration && PhotonNetwork.IsMasterClient)
                 {
@@ -57,6 +54,11 @@ public class Timer : MonoBehaviour
                     PictureNotFound();
                 }
             }
+            }
+
+            ShowOnGUI();
+
+            
         }
     }
 
