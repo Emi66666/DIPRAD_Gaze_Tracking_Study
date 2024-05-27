@@ -124,6 +124,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         Debug.Log("Game starting...");
 
         ownerStartingText.SetActive(false);
+        gamemodePicker.SetActive(false);
         startButton.SetActive(false);
         handMenuNetworkText.SetActive(false);
     }
