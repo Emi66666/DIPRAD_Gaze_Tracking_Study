@@ -4,6 +4,7 @@ using UnityEngine;
 using Unity.XR.CoreUtils;
 using Photon.Pun;
 using UnityEngine.XR;
+using Cognitive3D;
 
 public class VRTracker : MonoBehaviour
 {
@@ -37,6 +38,10 @@ public class VRTracker : MonoBehaviour
         if (photonView.IsMine)
         {
             foreach (var item in GetComponentsInChildren<Renderer>())
+            {
+                item.enabled = false;
+            }
+            foreach (var item in GetComponentsInChildren<DynamicObject>())
             {
                 item.enabled = false;
             }
