@@ -60,6 +60,8 @@ public class GameManager : MonoBehaviour
 
     public bool pictureFound;
 
+    public GameObject lastPictureCollider;
+
     void Awake()
     {
         _photonView = GetComponent<PhotonView>();
@@ -159,6 +161,8 @@ public class GameManager : MonoBehaviour
         PictureCollider pictureCollider = pictureColliders[randomNumber];
         pictureColliders.Remove(pictureCollider);
 
+        lastPictureCollider = pictureCollider.gameObject;
+
         handMenuPicture.texture = picture.texture;
         foreach (var menuPicture in menuPictures)
         {
@@ -236,6 +240,8 @@ public class GameManager : MonoBehaviour
         sr.WriteLine("Time: " + timeToFindPicture);
         sr.WriteLine("Points: 0");
 
+        lastPictureCollider.SetActive(false);
+
         foreach (var pictureTimerText in pictureTimerTexts)
         {
             pictureTimerText.SetActive(false);
@@ -278,6 +284,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayerFoundPictureCollider()
     {
+        Debug.Log("Hi");
         startAreaColliders.SetActive(true);
         OVRCameraRig.transform.position = spawnPoint.position;
 
