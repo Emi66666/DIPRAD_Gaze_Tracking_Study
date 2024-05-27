@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
         {
             _photonView.RPC("RemoveNetworkText", RpcTarget.All);
             _photonView.RPC("DeactivateStartAreaColliders", RpcTarget.All);
-            _photonView.RPC("StartTimer", RpcTarget.All);
+            _photonView.RPC("StartExplorationTimer", RpcTarget.All);
             _photonView.RPC("SetGamemode", RpcTarget.All, (Gamemode) gamemodePicker.value);
         }
     }
@@ -155,6 +155,7 @@ public class GameManager : MonoBehaviour
 
         sr.WriteLine();
         sr.WriteLine("Picture " + (pictures.IndexOf(picture) + 1) + ":");
+        // TODO: RPC da bude ista slika
     }
 
     public void SubmitAnswers()
@@ -211,8 +212,7 @@ public class GameManager : MonoBehaviour
         {
             pictureTimerText.SetActive(true);
         }
-        timer.timer = timeToFindPicture;
-        timer.StartTimer();
+        timer.StartPictureTimer(timeToFindPicture);
     }
 
     public void PictureNotFound()
@@ -354,9 +354,9 @@ public class GameManager : MonoBehaviour
     }
 
     [PunRPC]
-    public void StartTimer()
+    public void StartExplorationTimer()
     {
-        timer.StartTimer();
+        timer.StartExplorationTimer();
     }
 
     [PunRPC]

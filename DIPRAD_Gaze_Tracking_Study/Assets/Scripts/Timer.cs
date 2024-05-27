@@ -10,7 +10,8 @@ public class Timer : MonoBehaviour
     private bool started = false;
     private bool finished = false;
 
-    public GameObject[] timerTexts;
+    public GameObject[] explorationTimerTexts;
+    public GameObject[] pictureTimerTexts;
 
     public TMP_Text[] timeTextFields;
 
@@ -25,13 +26,26 @@ public class Timer : MonoBehaviour
         _photonView = GetComponent<PhotonView>();
     }
 
-    public void StartTimer()
+    public void StartExplorationTimer()
     {
-        foreach (var timerText in timerTexts)
+        foreach (var timerText in explorationTimerTexts)
         {
             timerText.SetActive(true);
         }
         started = true;
+        finished = false;
+        exploration = true;
+    }
+
+    public void StartPictureTimer(float time)
+    {
+        timer = time;
+        foreach (var timerText in pictureTimerTexts)
+        {
+            timerText.SetActive(true);
+        }
+        started = true;
+        finished = false;
     }
 
     void Update()
