@@ -269,6 +269,10 @@ public class GameManager : MonoBehaviour
 
     void EndGame()
     {
+        foreach (var pictureMenu in pictureMenus)
+        {
+            pictureMenu.SetActive(false);
+        }
         foreach (var gameEndMenu in gameEndMenus)
         {
             gameEndMenu.SetActive(true);
@@ -278,8 +282,8 @@ public class GameManager : MonoBehaviour
             otherPlayerWaitingText.SetActive(false);
         }
 
-        finalPoints[0].text = string.Format("{}", playerOnePoints);
-        finalPoints[1].text = string.Format("{}", playerTwoPoints);
+        finalPoints[0].text = playerOnePoints.ToString();
+        finalPoints[1].text = playerTwoPoints.ToString();
 
         sr.Close();
     }
