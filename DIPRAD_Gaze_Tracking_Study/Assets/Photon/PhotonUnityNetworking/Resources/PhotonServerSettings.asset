@@ -49,9 +49,9 @@ MonoBehaviour:
   - RemoveNetworkText
   - AnswerSubmitted
   - PictureColliderFound
-  - SetGamemode
   - ExplorationEnded
   - NextPicture
+  - SetGamemode
   - StartExplorationTimer
   DisableAutoOpenWizard: 1
   ShowSettings: 1
