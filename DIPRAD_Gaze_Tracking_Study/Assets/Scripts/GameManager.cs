@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public TMP_Dropdown gamemodePicker;
 
     public List<RawImage> pictures;
-    public List<PictureCollider> pictureColliders;
+    public List<GameObject> pictureColliders;
 
     public GameObject OVRCameraRig;
     public Transform spawnPoint;
@@ -162,7 +162,7 @@ public class GameManager : MonoBehaviour
         RawImage picture = pictures[randomNumber];
         pictures.Remove(picture);
 
-        PictureCollider pictureCollider = pictureColliders[randomNumber];
+        GameObject pictureCollider = pictureColliders[randomNumber];
         pictureColliders.Remove(pictureCollider);
 
         lastPictureCollider = pictureCollider.gameObject;
