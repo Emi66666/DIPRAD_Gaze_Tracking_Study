@@ -43,22 +43,18 @@ public class Timer : MonoBehaviour
                 timer -= Time.deltaTime;
 
                 if (timer <= 0.0f)
-            {
-                if (exploration && PhotonNetwork.IsMasterClient)
                 {
-                    _photonView.RPC("TimerEnded", RpcTarget.All);
-                }
-
-                if (!exploration && !gameManager.pictureFound)
-                {
-                    PictureNotFound();
+                    if (exploration && PhotonNetwork.IsMasterClient)
+                    {
+                        _photonView.RPC("ExplorationEnded", RpcTarget.All);
+                    }
+                    else if (!exploration && !gameManager.pictureFound)
+                    {
+                        PictureNotFound();
+                    }
                 }
             }
-            }
-
             ShowOnGUI();
-
-            
         }
     }
 
@@ -83,7 +79,7 @@ public class Timer : MonoBehaviour
     }
 
     [PunRPC]
-    public void TimerEnded()
+    public void ExplorationEnded()
     {
         finished = true;
         timer = 0.0f;

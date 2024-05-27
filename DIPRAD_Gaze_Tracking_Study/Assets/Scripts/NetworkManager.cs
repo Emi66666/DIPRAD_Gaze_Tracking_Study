@@ -121,8 +121,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public void RemoveNetworkText()
     {
-        Debug.Log("Game starting...");
-
         ownerStartingText.SetActive(false);
         gamemodePicker.SetActive(false);
         startButton.SetActive(false);

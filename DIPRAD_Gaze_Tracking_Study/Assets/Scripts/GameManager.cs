@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     public GameObject OVRCameraRig;
     public Transform spawnPoint;
 
-    public GameObject handMenu;
+    public GameObject handMenuPictureText;
     public RawImage handMenuPicture;
 
     private string fileName;
@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour
             pictureMenu.SetActive(true);
         }
 
-        handMenu.SetActive(true);
+        handMenuPictureText.SetActive(true);
 
         NextPicture();
     }
