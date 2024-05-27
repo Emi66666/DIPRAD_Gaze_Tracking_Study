@@ -294,7 +294,6 @@ public class GameManager : MonoBehaviour
 
     public void PlayerFoundPictureCollider()
     {
-        Debug.Log("Hi");
         startAreaColliders.SetActive(true);
         OVRCameraRig.transform.position = spawnPoint.position;
 
