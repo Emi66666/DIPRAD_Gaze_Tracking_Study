@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
 
     public float timeToFindPicture = 60f;
 
-    private TMP_Text[] points;
+    public TMP_Text[] points;
     public GameObject[] gameEndMenus;
     public TMP_Text[] finalPoints;
 
