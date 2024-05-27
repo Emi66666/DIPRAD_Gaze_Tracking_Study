@@ -257,14 +257,10 @@ public class GameManager : MonoBehaviour
             otherPlayerWaitingText.SetActive(true);
         }
 
-        if (pictures.Count > 0)
-        {
-            NextPictureNumber();
-        }
-        else
-        {
-            EndGame();
-        }
+        _photonView.RPC("PictureColliderFound", RpcTarget.All, 0f);
+        
+        sr.WriteLine("Time: " + (timeToFindPicture - timer.timer));
+        sr.WriteLine("Points: " + 0f);
     }
 
     void EndGame()
@@ -304,7 +300,7 @@ public class GameManager : MonoBehaviour
 
         pictureFound = true;
 
-        int pointsAwarded = (int) ((timer.timer / timeToFindPicture) * 10000);
+        int pointsAwarded = (int) (timer.timer / timeToFindPicture * 10000);
         if (gamemode == Gamemode.COLLABORATIVE)
         {
             pointsAwarded /= 2;
