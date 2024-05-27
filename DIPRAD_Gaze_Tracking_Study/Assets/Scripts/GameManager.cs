@@ -103,10 +103,21 @@ public class GameManager : MonoBehaviour
 
         handMenuPictureText.SetActive(true);
 
-        NextPicture();
+        NextPictureNumber();
     }
 
-    public void NextPicture()
+    public void NextPictureNumber()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            int pictureNumber = pictures.Count;
+            int randomNumber = Random.Range(0, pictureNumber - 1);
+            _photonView.RPC("NextPicture", RpcTarget.All, randomNumber);
+        }
+    }
+
+    [PunRPC]
+    public void NextPicture(int randomNumber)
     {
         answersSubmitted = 0;
         pictureCollidersFound = 0;
@@ -137,9 +148,6 @@ public class GameManager : MonoBehaviour
             answer.value = 0f;
         }
 
-        int pictureNumber = pictures.Count;
-        int randomNumber = Random.Range(0, pictureNumber - 1);
-
         RawImage picture = pictures[randomNumber];
         pictures.Remove(picture);
 
@@ -155,7 +163,6 @@ public class GameManager : MonoBehaviour
 
         sr.WriteLine();
         sr.WriteLine("Picture " + (pictures.IndexOf(picture) + 1) + ":");
-        // TODO: RPC da bude ista slika
     }
 
     public void SubmitAnswers()
@@ -231,7 +238,7 @@ public class GameManager : MonoBehaviour
 
         if (pictures.Count > 0)
         {
-            NextPicture();
+            NextPictureNumber();
         }
         else
         {
@@ -324,7 +331,7 @@ public class GameManager : MonoBehaviour
 
             if (pictures.Count > 0)
             {
-                NextPicture();
+                NextPictureNumber();
             }
             else
             {
