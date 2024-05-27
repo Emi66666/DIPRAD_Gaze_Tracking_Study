@@ -68,8 +68,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         fileName = "/GazeTracking_" + System.DateTime.Now.ToString("MM-dd-yy_hh-mm-ss") + ".txt";
-        path = Application.dataPath + fileName;
-        Debug.Log(path);
+        path = Application.persistentDataPath + fileName;
         sr = File.CreateText(path);
     }
 
@@ -213,6 +212,9 @@ public class GameManager : MonoBehaviour
 
     public void PictureNotFound()
     {
+        sr.WriteLine("Time: " + timeToFindPicture);
+        sr.WriteLine("Points: 0");
+
         foreach (var pictureTimerText in pictureTimerTexts)
         {
             pictureTimerText.SetActive(false);
@@ -249,6 +251,8 @@ public class GameManager : MonoBehaviour
             finalPoints[1].text = string.Format("{}", currentPlayerPoints);
             finalPoints[0].text = string.Format("{}", otherPlayerPoints);
         }
+
+        sr.Close();
     }
 
     public void PlayerFoundPictureCollider()
@@ -278,6 +282,12 @@ public class GameManager : MonoBehaviour
         if (gamemode == Gamemode.COLLABORATIVE)
         {
             pointsAwarded /= 2;
+        }
+
+        if (_photonView.IsMine)
+        {
+            sr.WriteLine("Time: " + (timer.timer / timeToFindPicture));
+            sr.WriteLine("Points: " + pointsAwarded);
         }
 
         if (gamemode == Gamemode.COMPETITIVE)
