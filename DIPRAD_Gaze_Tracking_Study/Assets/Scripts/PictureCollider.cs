@@ -11,7 +11,7 @@ public class PictureCollider : MonoBehaviour
     {
         gameManager = FindFirstObjectByType(typeof(GameManager)) as GameManager;
         GetComponent<MeshRenderer>().enabled = false;
-        GetComponent<CapsuleCollider>().enabled = false;
+        GetComponent<BoxCollider>().enabled = false;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -21,7 +21,7 @@ public class PictureCollider : MonoBehaviour
             gameManager.PlayerFoundPictureCollider();
             gameObject.SetActive(false);
             GetComponent<MeshRenderer>().enabled = false;
-            GetComponent<CapsuleCollider>().enabled = false;
+            GetComponent<BoxCollider>().enabled = false;
         }
     }
 }

@@ -174,7 +174,7 @@ public class GameManager : MonoBehaviour
         }
         
         pictureCollider.GetComponent<MeshRenderer>().enabled = true;
-        pictureCollider.GetComponent<CapsuleCollider>().enabled = true;
+        pictureCollider.GetComponent<BoxCollider>().enabled = true;
 
         sr.WriteLine();
         sr.WriteLine("Picture " + (pictures.IndexOf(picture) + 1) + ":");
