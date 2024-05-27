@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public TMP_Dropdown gamemodePicker;
 
     public List<RawImage> pictures;
-    public List<GameObject> pictureColliders;
+    public List<PictureCollider> pictureColliders;
 
     public GameObject OVRCameraRig;
     public Transform spawnPoint;
@@ -156,7 +156,7 @@ public class GameManager : MonoBehaviour
         RawImage picture = pictures[randomNumber];
         pictures.Remove(picture);
 
-        GameObject pictureCollider = pictureColliders[randomNumber];
+        PictureCollider pictureCollider = pictureColliders[randomNumber];
         pictureColliders.Remove(pictureCollider);
 
         handMenuPicture.texture = picture.texture;
@@ -164,7 +164,7 @@ public class GameManager : MonoBehaviour
         {
             menuPicture.texture = picture.texture;
         }
-        pictureCollider.GetComponentInParent<Transform>().gameObject.SetActive(true);
+        pictureCollider.gameObject.SetActive(true);
 
         sr.WriteLine();
         sr.WriteLine("Picture " + (pictures.IndexOf(picture) + 1) + ":");

@@ -16,6 +16,7 @@ public class PictureCollider : MonoBehaviour
         if (collision.gameObject.layer == 7)
         {
             gameManager.PlayerFoundPictureCollider();
+            gameObject.SetActive(false);
         }
     }
 }
