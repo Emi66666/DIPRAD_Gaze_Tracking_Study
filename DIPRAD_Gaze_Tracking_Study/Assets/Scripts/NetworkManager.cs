@@ -13,14 +13,10 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public GameObject[] connectingToLobbyTexts;
     public GameObject[] connectingToRoomTexts;
     public GameObject[] waitingForPlayerTexts;
-    //public GameObject gameStartingText;
 
+    public GameObject gamemodePicker;
     public GameObject startButton; 
 
-    //public GameObject mapText;
-    //public GameObject mapDropdown;
-    //public GameObject gamemodeText;
-    //public GameObject gamemodeDropdown;
     public GameObject ownerStartingText;
     public GameObject handMenuNetworkText;
 
@@ -114,19 +110,12 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public void ShowGameMenu()
     {
         ownerStartingText.SetActive(true);
+        gamemodePicker.SetActive(true);
         startButton.SetActive(true);
 
         if (!PhotonNetwork.IsMasterClient)
         {
             startButton.GetComponent<Button>().interactable = false;
-            //mapText.SetActive(false);
-            //mapDropdown.SetActive(false);
-            //gamemodeText.SetActive(false);
-            //gamemodeDropdown.SetActive(false);
-        }
-        else
-        {
-            //ownerStartingText.SetActive(false);
         }
     }
 
@@ -137,15 +126,5 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         ownerStartingText.SetActive(false);
         startButton.SetActive(false);
         handMenuNetworkText.SetActive(false);
-
-        //int mapValue = mapDropdown.GetComponent<TMP_Dropdown>().value;
-        //int gamemodeValue = gamemodeDropdown.GetComponent<TMP_Dropdown>().value;
-
-        // 
-
-        //gameStartingText.SetActive(true);
-        // TODO: Add to scriptable object
-
-        //PhotonNetwork.LoadLevel(mapValue + 1);
     }
 }

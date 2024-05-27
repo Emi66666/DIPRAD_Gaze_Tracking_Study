@@ -47,6 +47,8 @@ MonoBehaviour:
   - ActivateStartAreaColliders
   - DeactivateStartAreaColliders
   - RemoveNetworkText
+  - AnswerSubmitted
+  - PictureColliderFound
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
