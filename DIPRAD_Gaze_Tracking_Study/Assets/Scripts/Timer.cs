@@ -16,6 +16,10 @@ public class Timer : MonoBehaviour
 
     private PhotonView _photonView;
 
+    public GameManager gameManager;
+
+    bool exploration = true;
+
     void Awake()
     {
         _photonView = GetComponent<PhotonView>();
@@ -43,12 +47,24 @@ public class Timer : MonoBehaviour
 
             if (timer <= 0.0f)
             {
-                if (PhotonNetwork.IsMasterClient)
+                if (exploration && PhotonNetwork.IsMasterClient)
                 {
                     _photonView.RPC("TimerEnded", RpcTarget.All);
                 }
+
+                if (!exploration && !gameManager.pictureFound)
+                {
+                    PictureNotFound();
+                }
             }
         }
+    }
+
+    void PictureNotFound()
+    {
+        finished = true;
+        timer = 0.0f;
+        gameManager.PictureNotFound();
     }
 
     void ShowOnGUI()
@@ -67,10 +83,10 @@ public class Timer : MonoBehaviour
     [PunRPC]
     public void TimerEnded()
     {
-        Debug.Log("Timer Ended called");
         finished = true;
         timer = 0.0f;
+        exploration = false;
 
-        // TODO: Teleport player back after timer expires
+        gameManager.StartQuestions();
     }
 }
