@@ -2,8 +2,8 @@
 ***********SYSTEM************
 *****************************
 Unity Version:2023.2.17f1
-OS:Windows 11  (10.0.22000) 64bit
-System Time: 22.5.2024. 13:03:23
+OS:Windows 10  (10.0.19045) 64bit
+System Time: 27.5.2024. 14:12:07
 
 *****************************
 ***********PROJECT***********
@@ -13,6 +13,7 @@ Packages:
   com.cognitive3d.c3d-sdk 1.4.7
   com.meta.xr.sdk.all 64.0.0
   com.meta.xr.sdk.interaction.ovr.samples 64.0.0
+  com.unity.2d.sprite 1.0.0
   com.unity.collab-proxy 2.3.1
   com.unity.feature.development 1.0.2
   com.unity.timeline 1.8.6
@@ -89,9 +90,9 @@ Scene Settings:
   ├─Map_Amusement_Park
   │  ├─Scene Id: 1bbd9a3a-7854-4f9e-b289-5e9ca4d6a3f5
   │  ├─Scene Path: Assets/Scenes/Map_Amusement_Park.unity
-  │  ├─Last Revision: 05/16/2024 16:31:40
-  │  ├─Version Number: 1
-  │  └─Version Id: 6338
+  │  ├─Last Revision: 05/22/2024 21:12:13
+  │  ├─Version Number: 7
+  │  └─Version Id: 6423
   ├─Main_Menu
   │  ├─Scene Id: d54a43d2-3942-422a-b18e-8426b994e777
   │  ├─Scene Path: Assets/Scenes/Main_Menu.unity
@@ -111,10 +112,10 @@ Scene Settings:
 Scene Name: Map_Amusement_Park
 Scene Id: 1bbd9a3a-7854-4f9e-b289-5e9ca4d6a3f5
 Scene Path: Assets/Scenes/Map_Amusement_Park.unity
-Last Revision: 05/16/2024 16:31:40
-Version Number: 1
-Version Id: 6338
-Scene Size (mb): 40,83
+Last Revision: 05/22/2024 21:12:13
+Version Number: 7
+Version Id: 6423
+Scene Size (mb): 23,82
 Main Camera GameObject: CenterEyeAnchor
 Manager Initialize On Start: True
 Manager Startup Delay Time (s): 0
@@ -122,22 +123,7 @@ Manager Startup Delay Time (s): 0
 *****************************
 ****CURRENT SCENE OBJECTS****
 *****************************
-Dynamic Object Count: 6
-  ├─attraction_003
-  │  ├─Mesh Name: attraction_003
-  │  ├─Has Collider: false
-  │  ├─Has Children: true
-  │  └─Has Child Colliders: true
-  ├─Main Menu
-  │  ├─Mesh Name: main_menu
-  │  ├─Has Collider: false
-  │  ├─Has Children: true
-  │  └─Has Child Colliders: false
-  ├─Main Menu
-  │  ├─Mesh Name: main_menu
-  │  ├─Has Collider: false
-  │  ├─Has Children: true
-  │  └─Has Child Colliders: false
+Dynamic Object Count: 111
   ├─RightHandAnchor
   │  ├─Mesh Name: righthandanchor
   │  ├─Has Collider: false
@@ -148,41 +134,571 @@ Dynamic Object Count: 6
   │  ├─Has Collider: false
   │  ├─Has Children: true
   │  └─Has Child Colliders: false
-  └─Backup body.001
-     ├─Mesh Name: backup_body.001
-     ├─Has Collider: false
-     └─Has Children: false
+  ├─Backup body.001
+  │  ├─Mesh Name: backup_body.001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.SphereCollider
+  │  └─Has Children: false
+  ├─Main Menu
+  │  ├─Mesh Name: main_menu
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: false
+  ├─Table
+  │  ├─Mesh Name: table
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─Main Menu
+  │  ├─Mesh Name: main_menu
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: false
+  ├─Table
+  │  ├─Mesh Name: table
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─decoration_001
+  │  ├─Mesh Name: decoration_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─monument_001
+  │  ├─Mesh Name: monument_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_tower_008
+  │  ├─Mesh Name: castle_tower_008
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_tower_010
+  │  ├─Mesh Name: castle_tower_010
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─fountain_005
+  │  ├─Mesh Name: fountain_005
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─stall_007
+  │  ├─Mesh Name: stall_007
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_tower_005
+  │  ├─Mesh Name: castle_tower_005
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_2_001
+  │  ├─Mesh Name: attraction_2_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: true
+  ├─stall_003
+  │  ├─Mesh Name: stall_003
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─speaker_001
+  │  ├─Mesh Name: speaker_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─scene_construction_001
+  │  ├─Mesh Name: scene_construction_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_5_005
+  │  ├─Mesh Name: attraction_5_005
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_5_003
+  │  ├─Mesh Name: attraction_5_003
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─building_002
+  │  ├─Mesh Name: building_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_5_008
+  │  ├─Mesh Name: attraction_5_008
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─fountain_002
+  │  ├─Mesh Name: fountain_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_tower_009
+  │  ├─Mesh Name: castle_tower_009
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_8_004
+  │  ├─Mesh Name: attraction_8_004
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_tower_008
+  │  ├─Mesh Name: castle_tower_008
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─dinosaur_001
+  │  ├─Mesh Name: dinosaur_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─dinosaur_006
+  │  ├─Mesh Name: dinosaur_006
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_tower_002
+  │  ├─Mesh Name: castle_tower_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─fountain_005
+  │  ├─Mesh Name: fountain_005
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─fountain_001
+  │  ├─Mesh Name: fountain_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─roller_coaster_002
+  │  ├─Mesh Name: roller_coaster_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─ticket_stall_006
+  │  ├─Mesh Name: ticket_stall_006
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_entrance_002
+  │  ├─Mesh Name: attraction_entrance_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_003
+  │  ├─Mesh Name: castle_003
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_tower_001
+  │  ├─Mesh Name: castle_tower_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_5_004
+  │  ├─Mesh Name: attraction_5_004
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─boat_001
+  │  ├─Mesh Name: boat_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─ticket_stall_001
+  │  ├─Mesh Name: ticket_stall_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_tower_006
+  │  ├─Mesh Name: castle_tower_006
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_8_002
+  │  ├─Mesh Name: attraction_8_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─tent_001
+  │  ├─Mesh Name: tent_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_tower_002
+  │  ├─Mesh Name: castle_tower_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─dinosaur_003
+  │  ├─Mesh Name: dinosaur_003
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─decoration_007
+  │  ├─Mesh Name: decoration_007
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_1_001
+  │  ├─Mesh Name: attraction_1_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: true
+  ├─castle_tower_003
+  │  ├─Mesh Name: castle_tower_003
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_tower_007
+  │  ├─Mesh Name: castle_tower_007
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─ticket_stall_002
+  │  ├─Mesh Name: ticket_stall_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_8_001
+  │  ├─Mesh Name: attraction_8_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─decoration_002
+  │  ├─Mesh Name: decoration_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─building_001
+  │  ├─Mesh Name: building_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_3_001
+  │  ├─Mesh Name: attraction_3_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: true
+  ├─tent_002
+  │  ├─Mesh Name: tent_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─fountain_003
+  │  ├─Mesh Name: fountain_003
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─dinosaur_002
+  │  ├─Mesh Name: dinosaur_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_13_001
+  │  ├─Mesh Name: attraction_13_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: true
+  ├─attraction_entrance_003
+  │  ├─Mesh Name: attraction_entrance_003
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_8_006
+  │  ├─Mesh Name: attraction_8_006
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─tent_002
+  │  ├─Mesh Name: tent_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_14_001
+  │  ├─Mesh Name: attraction_14_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: true
+  ├─castle_002
+  │  ├─Mesh Name: castle_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─decoration_002
+  │  ├─Mesh Name: decoration_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_001
+  │  ├─Mesh Name: castle_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_7_001
+  │  ├─Mesh Name: attraction_7_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─tent_003
+  │  ├─Mesh Name: tent_003
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─boat_002
+  │  ├─Mesh Name: boat_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─pirate_ship_001
+  │  ├─Mesh Name: pirate_ship_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─fountain_005
+  │  ├─Mesh Name: fountain_005
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─dinosaur_005
+  │  ├─Mesh Name: dinosaur_005
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_entrance_001
+  │  ├─Mesh Name: attraction_entrance_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_8_001
+  │  ├─Mesh Name: attraction_8_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: true
+  ├─stall_003
+  │  ├─Mesh Name: stall_003
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_tower_004
+  │  ├─Mesh Name: castle_tower_004
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_5_002
+  │  ├─Mesh Name: attraction_5_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_5_007
+  │  ├─Mesh Name: attraction_5_007
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─stall_001
+  │  ├─Mesh Name: stall_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_8_005
+  │  ├─Mesh Name: attraction_8_005
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_5_006
+  │  ├─Mesh Name: attraction_5_006
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─stall_005
+  │  ├─Mesh Name: stall_005
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_tower_006
+  │  ├─Mesh Name: castle_tower_006
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─roller_coaster_001
+  │  ├─Mesh Name: roller_coaster_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─stall_007
+  │  ├─Mesh Name: stall_007
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_12_001
+  │  ├─Mesh Name: attraction_12_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: true
+  ├─attraction_8_007
+  │  ├─Mesh Name: attraction_8_007
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_10_001
+  │  ├─Mesh Name: attraction_10_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: true
+  ├─dinosaur_004
+  │  ├─Mesh Name: dinosaur_004
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─stall_002
+  │  ├─Mesh Name: stall_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_tower_008
+  │  ├─Mesh Name: castle_tower_008
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─signboard_001
+  │  ├─Mesh Name: signboard_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_6_001
+  │  ├─Mesh Name: attraction_6_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: true
+  ├─tent_002
+  │  ├─Mesh Name: tent_002
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_tower_008
+  │  ├─Mesh Name: castle_tower_008
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_11_001
+  │  ├─Mesh Name: attraction_11_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: true
+  ├─castle_tower_012
+  │  ├─Mesh Name: castle_tower_012
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─speaker_001
+  │  ├─Mesh Name: speaker_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─stall_003
+  │  ├─Mesh Name: stall_003
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_tower_009
+  │  ├─Mesh Name: castle_tower_009
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_004
+  │  ├─Mesh Name: castle_004
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_tower_008
+  │  ├─Mesh Name: castle_tower_008
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─decoration_003
+  │  ├─Mesh Name: decoration_003
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─scene_001
+  │  ├─Mesh Name: scene_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─stall_006
+  │  ├─Mesh Name: stall_006
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_4_001
+  │  ├─Mesh Name: attraction_4_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: true
+  ├─attraction_5_001
+  │  ├─Mesh Name: attraction_5_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─castle_tower_011
+  │  ├─Mesh Name: castle_tower_011
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─attraction_15_001
+  │  ├─Mesh Name: attraction_15_001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─stall_003
+  │  ├─Mesh Name: stall_003
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─ticket_stall_003
+  │  ├─Mesh Name: ticket_stall_003
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─stall_004
+  │  ├─Mesh Name: stall_004
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  └─attraction_9_001
+     ├─Mesh Name: attraction_9_001
+     ├─Has Collider: true
+     ├─Collider Type: UnityEngine.MeshCollider
+     ├─Has Children: true
+     └─Has Child Colliders: true
 
 *****************************
 ********EXPORT FOLDER********
 *****************************
-/Cognitive3D_SceneExplorerExport (292mb)
-   /Dynamic (2,16mb)
-      /attraction_003 (0,94mb)
-         1124351310TextureMain.png (0,14mb)
-         attraction_003.bin (0,68mb)
-         attraction_003.gltf (0,02mb)
-         cvr_object_thumbnail.png (0,10mb)
-      /backup_body.001 (0,59mb)
-         backup_body.001.bin (0,58mb)
-         backup_body.001.gltf (0,00mb)
-         cvr_object_thumbnail.png (0,00mb)
-      /main_menu (0,02mb)
-         371857150Main_MenuMain.png (0,00mb)
-         cvr_object_thumbnail.png (0,01mb)
-         main_menu.bin (0,00mb)
-         main_menu.gltf (0,00mb)
-      /robot_head (0,60mb)
-         371857150Left_EyeMain.png (0,00mb)
-         371857150MouthHappyMain.png (0,00mb)
-         371857150Right_EyeMain.png (0,00mb)
-         cvr_object_thumbnail.png (0,00mb)
-         robot_head.bin (0,58mb)
-         robot_head.gltf (0,01mb)
-      /table (0,02mb)
-         cvr_object_thumbnail.png (0,01mb)
-         table.bin (0,00mb)
-         table.gltf (0,00mb)
+/Cognitive3D_SceneExplorerExport (273mb)
+   /Dynamic (0,00mb)
    /Main_Menu (14,97mb)
       1180938966controller_r_lo_BaseColorMain.png (0,59mb)
       122199232touchController_albedoMain.png (0,07mb)
@@ -232,7 +748,7 @@ Dynamic Object Count: 6
       settings.json (0,00mb)
       /screenshot (0,10mb)
          screenshot.png (0,10mb)
-   /Map_Amusement_Park (40,83mb)
+   /Map_Amusement_Park (23,82mb)
       1124351310TextureMain.png (0,14mb)
       1180938966controller_r_lo_BaseColorMain.png (0,59mb)
       122199232touchController_albedoMain.png (0,07mb)
@@ -253,11 +769,11 @@ Dynamic Object Count: 6
       479365944OculusTouchForQuest2_AlbedoRoughnessMain.png (0,23mb)
       768432320controller_l_lo_BaseColorMain.png (0,58mb)
       debug.log (0,02mb)
-      scene.bin (28,72mb)
-      scene.gltf (2,81mb)
+      scene.bin (11,50mb)
+      scene.gltf (2,48mb)
       settings.json (0,00mb)
-      /screenshot (0,28mb)
-         screenshot.png (0,28mb)
+      /screenshot (0,81mb)
+         screenshot.png (0,81mb)
    /Map_Dreamscape_Village (219,39mb)
       1028224520T_Terrain_03_CMain.png (2,10mb)
       1028296518T_Terrain_01_CMain.png (2,07mb)
