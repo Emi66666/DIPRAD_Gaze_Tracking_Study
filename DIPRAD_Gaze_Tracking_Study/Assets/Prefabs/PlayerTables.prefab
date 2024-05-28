@@ -7250,7 +7250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5885685611744174103, guid: 22854c36395ff924282911e48ef9649e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5961994330013648739, guid: 22854c36395ff924282911e48ef9649e, type: 3}
       propertyPath: m_Pivot.x
@@ -7338,7 +7338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8085816246714945762, guid: 22854c36395ff924282911e48ef9649e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
