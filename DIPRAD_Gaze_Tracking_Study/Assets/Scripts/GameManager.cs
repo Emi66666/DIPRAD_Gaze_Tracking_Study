@@ -322,20 +322,20 @@ public class GameManager : MonoBehaviour
 
         pictureFound = true;
 
-        int pointsAwarded = (int) (timer.timer / timeToFindPicture * 10000);
+        int pointsAwarded = (int) (timer.timer / timeToFindPicture * 1000);
         if (gamemode == Gamemode.COLLABORATIVE)
         {
             pointsAwarded /= 2;
         }
 
-        _photonView.RPC("PictureColliderFound", RpcTarget.All, pointsAwarded);
+        _photonView.RPC("PictureColliderFound", RpcTarget.All, pointsAwarded, PhotonNetwork.IsMasterClient);
         
         sr.WriteLine("Time: " + (timeToFindPicture - timer.timer));
         sr.WriteLine("Points: " + pointsAwarded);
     }
 
     [PunRPC]
-    public void PictureColliderFound(int pointsAwarded)
+    public void PictureColliderFound(int pointsAwarded, bool isMasterClient)
     {
         Debug.Log("[TEST] Picture collider found");
 
@@ -343,7 +343,7 @@ public class GameManager : MonoBehaviour
 
         if (gamemode == Gamemode.COMPETITIVE)
         {
-            if (PhotonNetwork.IsMasterClient)
+            if (isMasterClient)
             {
                 playerOnePoints += pointsAwarded;
             }
