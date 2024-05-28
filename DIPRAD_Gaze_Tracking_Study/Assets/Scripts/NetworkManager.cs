@@ -115,6 +115,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         if (!PhotonNetwork.IsMasterClient)
         {
+            gamemodePicker.SetActive(false);
             startButton.GetComponent<Button>().interactable = false;
         }
     }
