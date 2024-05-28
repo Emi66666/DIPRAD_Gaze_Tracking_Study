@@ -42,8 +42,8 @@ public class GameManager : MonoBehaviour
     public GameObject[] otherPlayerAnswers;
     public GameObject[] otherPlayerWaitingTexts;
 
-    public Scrollbar[] answers1;
-    public Scrollbar[] answers2;
+    public TMP_Dropdown[] answers1;
+    public TMP_Dropdown[] answers2;
 
     private int answersSubmitted;
     private int pictureCollidersFound;
@@ -160,11 +160,11 @@ public class GameManager : MonoBehaviour
 
         foreach (var answer in answers1)
         {
-            answer.value = 0f;
+            answer.value = 0;
         }
         foreach (var answer in answers2)
         {
-            answer.value = 0f;
+            answer.value = 0;
         }
 
         RawImage picture = pictures[randomNumber];
@@ -193,11 +193,13 @@ public class GameManager : MonoBehaviour
         sr.WriteLine("I can remember the place on the picture very well: ");
         if (PhotonNetwork.IsMasterClient)
         {
-            sr.WriteLine(answers1[0].value * 4 + 1);
+            Debug.Log(answers1[0].value + 1);
+            sr.WriteLine(answers1[0].value + 1);
         }
         else
         {
-            sr.WriteLine(answers1[1].value * 4 + 1);
+            Debug.Log(answers1[0].value + 1);
+            sr.WriteLine(answers1[1].value + 1);
         }
 
         sr.WriteLine("I could find my way back to the place on the picture: ");
