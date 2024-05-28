@@ -193,23 +193,21 @@ public class GameManager : MonoBehaviour
         sr.WriteLine("I can remember the place on the picture very well: ");
         if (PhotonNetwork.IsMasterClient)
         {
-            Debug.Log(answers1[0].value + 1);
             sr.WriteLine(answers1[0].value + 1);
         }
         else
         {
-            Debug.Log(answers1[0].value + 1);
             sr.WriteLine(answers1[1].value + 1);
         }
 
         sr.WriteLine("I could find my way back to the place on the picture: ");
         if (PhotonNetwork.IsMasterClient)
         {
-            sr.WriteLine(answers2[0].value * 4 + 1);
+            sr.WriteLine(answers2[0].value + 1);
         }
         else
         {
-            sr.WriteLine(answers2[1].value * 4 + 1);
+            sr.WriteLine(answers2[1].value + 1);
         }
 
         if (PhotonNetwork.IsMasterClient)
