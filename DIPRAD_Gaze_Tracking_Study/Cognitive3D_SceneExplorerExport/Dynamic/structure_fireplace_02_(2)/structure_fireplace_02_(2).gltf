@@ -1,0 +1,537 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 249,
+      "type": "VEC3",
+      "max": [
+        0.88487076759338379,
+        1.8612525463104248,
+        0.87137597799301147
+      ],
+      "min": [
+        -0.79469007253646851,
+        -0.028496226295828819,
+        -0.936998188495636
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 249,
+      "type": "VEC3",
+      "max": [
+        0.99982708692550659,
+        0.98801267147064209,
+        0.99964964389801025
+      ],
+      "min": [
+        -0.99379491806030273,
+        -1.0,
+        -0.99941897392272949
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 249,
+      "type": "VEC4",
+      "max": [
+        0.99993801116943359,
+        0.97604840993881226,
+        0.999997615814209,
+        1.0
+      ],
+      "min": [
+        -0.99977892637252808,
+        -0.99999403953552246,
+        -0.59720569849014282,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 249,
+      "type": "VEC2",
+      "max": [
+        0.9254794716835022,
+        0.98669701814651489
+      ],
+      "min": [
+        0.32150015234947205,
+        0.013798415660858154
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5121,
+      "count": 858,
+      "type": "SCALAR",
+      "max": [
+        248.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 147,
+      "type": "VEC3",
+      "max": [
+        0.68572324514389038,
+        2.0090715885162354,
+        0.75483518838882446
+      ],
+      "min": [
+        -0.68003493547439575,
+        -0.015620311722159386,
+        -0.7864874005317688
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 147,
+      "type": "VEC3",
+      "max": [
+        0.99971514940261841,
+        1.0,
+        0.99972707033157349
+      ],
+      "min": [
+        -0.99997174739837646,
+        -1.0,
+        -0.99989473819732666
+      ]
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5126,
+      "count": 147,
+      "type": "VEC4",
+      "max": [
+        0.53606796264648438,
+        0.99984002113342285,
+        0.9999995231628418,
+        1.0
+      ],
+      "min": [
+        -0.53760761022567749,
+        -0.53126746416091919,
+        -0.63938194513320923,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 147,
+      "type": "VEC2",
+      "max": [
+        0.90751045942306519,
+        0.98452490568161011
+      ],
+      "min": [
+        0.51607578992843628,
+        0.050711333751678467
+      ]
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5121,
+      "count": 624,
+      "type": "SCALAR",
+      "max": [
+        146.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "structure_fireplace_02_(2).bin",
+      "byteLength": 20490
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 2988
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2988,
+      "byteLength": 2988
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5976,
+      "byteLength": 3984
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9960,
+      "byteLength": 1992
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 11952,
+      "byteLength": 858
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12810,
+      "byteLength": 1764
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 14574,
+      "byteLength": 1764
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 16338,
+      "byteLength": 2352
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 18690,
+      "byteLength": 1176
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 19866,
+      "byteLength": 624
+    }
+  ],
+  "images": [
+    {
+      "uri": "884416161T_Fireplace_CMain.png",
+      "name": "T_Fireplace_C"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "name": "MI_Fireplace"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "SM_Fireplace_Top_LOD2"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 0
+        }
+      ],
+      "name": "SM_Fireplace_Mid_LOD2"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 0
+        }
+      ],
+      "name": "SM_Fireplace_Mid_LOD2"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 0
+        }
+      ],
+      "name": "SM_Fireplace_Mid_LOD2"
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1,
+        5,
+        9,
+        13
+      ],
+      "name": "Structure_Fireplace_02 (2)"
+    },
+    {
+      "children": [
+        2,
+        3,
+        4
+      ],
+      "translation": [
+        0.0,
+        5.6,
+        0.0
+      ],
+      "name": "Props_Fireplace_Top"
+    },
+    {
+      "rotation": [
+        2.18556941E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "SM_Fireplace_Top_LOD0"
+    },
+    {
+      "rotation": [
+        6.717942E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.00000012,
+        1.00000012
+      ],
+      "name": "SM_Fireplace_Top_LOD1"
+    },
+    {
+      "mesh": 0,
+      "rotation": [
+        6.717942E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.00000012,
+        1.00000012
+      ],
+      "name": "SM_Fireplace_Top_LOD2"
+    },
+    {
+      "children": [
+        6,
+        7,
+        8
+      ],
+      "translation": [
+        0.0,
+        3.6,
+        0.0
+      ],
+      "name": "Props_Fireplace_Mid (3)"
+    },
+    {
+      "rotation": [
+        2.18556941E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "SM_Fireplace_Mid_LOD0"
+    },
+    {
+      "rotation": [
+        6.717942E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.00000012,
+        1.00000012
+      ],
+      "name": "SM_Fireplace_Mid_LOD1"
+    },
+    {
+      "mesh": 1,
+      "rotation": [
+        6.717942E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.00000012,
+        1.00000012
+      ],
+      "name": "SM_Fireplace_Mid_LOD2"
+    },
+    {
+      "children": [
+        10,
+        11,
+        12
+      ],
+      "translation": [
+        0.0,
+        -0.399999976,
+        0.0
+      ],
+      "name": "Props_Fireplace_Mid (1)"
+    },
+    {
+      "rotation": [
+        2.18556941E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "SM_Fireplace_Mid_LOD0"
+    },
+    {
+      "rotation": [
+        6.717942E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.00000012,
+        1.00000012
+      ],
+      "name": "SM_Fireplace_Mid_LOD1"
+    },
+    {
+      "mesh": 2,
+      "rotation": [
+        6.717942E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.00000012,
+        1.00000012
+      ],
+      "name": "SM_Fireplace_Mid_LOD2"
+    },
+    {
+      "children": [
+        14,
+        15,
+        16
+      ],
+      "scale": [
+        -1.0,
+        1.0,
+        1.0
+      ],
+      "translation": [
+        0.0,
+        1.6,
+        0.0
+      ],
+      "name": "Props_Fireplace_Mid (2)"
+    },
+    {
+      "rotation": [
+        2.18556941E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "SM_Fireplace_Mid_LOD0"
+    },
+    {
+      "rotation": [
+        6.717942E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.00000012,
+        1.00000012
+      ],
+      "name": "SM_Fireplace_Mid_LOD1"
+    },
+    {
+      "mesh": 3,
+      "rotation": [
+        6.717942E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.00000012,
+        1.00000012
+      ],
+      "name": "SM_Fireplace_Mid_LOD2"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "structure_fireplace_02_(2)"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "884416161T_Fireplace_CMain"
+    }
+  ]
+}

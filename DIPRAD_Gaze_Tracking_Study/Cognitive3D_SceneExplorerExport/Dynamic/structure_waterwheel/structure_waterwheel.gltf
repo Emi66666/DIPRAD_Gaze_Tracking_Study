@@ -1,0 +1,203 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 1809,
+      "type": "VEC3",
+      "max": [
+        1.4914207458496094,
+        2.8858554363250732,
+        2.8923835754394531
+      ],
+      "min": [
+        -1.6706537008285522,
+        -2.8858575820922852,
+        -2.8923835754394531
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1809,
+      "type": "VEC3",
+      "max": [
+        0.9999690055847168,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1809,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        0.99919503927230835,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.99993801116943359,
+        -0.99922597408294678,
+        -0.99919503927230835,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 1809,
+      "type": "VEC2",
+      "max": [
+        0.98193359375,
+        0.98876953125
+      ],
+      "min": [
+        0.01087188720703125,
+        0.00524139404296875
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 1809,
+      "type": "VEC2",
+      "max": [
+        0.9912109375,
+        0.99169921875
+      ],
+      "min": [
+        0.00806427001953125,
+        0.00806427001953125
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 7392,
+      "type": "SCALAR",
+      "max": [
+        1808.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "structure_waterwheel.bin",
+      "byteLength": 116088
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 21708
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 21708,
+      "byteLength": 21708
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 43416,
+      "byteLength": 28944
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 72360,
+      "byteLength": 14472
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 86832,
+      "byteLength": 14472
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 101304,
+      "byteLength": 14784
+    }
+  ],
+  "images": [
+    {
+      "uri": "681192388T_WaterWheel_CMain.png",
+      "name": "T_WaterWheel_C"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "name": "M_WaterWheel"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 5,
+          "material": 0
+        }
+      ],
+      "name": "SM_WaterWheel_LOD0"
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "Structure_WaterWheel"
+    },
+    {
+      "mesh": 0,
+      "name": "SM_WaterWheel_LOD0"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "structure_waterwheel"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "681192388T_WaterWheel_CMain"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 324,
+      "type": "VEC3",
+      "max": [
+        6.296208381652832,
+        1.7000008821487427,
+        4.1962070465087891
+      ],
+      "min": [
+        0.040771067142486572,
+        -3.5000002384185791,
+        -4.2962102890014648
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 324,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 324,
+      "type": "VEC4",
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 324,
+      "type": "VEC2",
+      "max": [
+        0.998046875,
+        0.98974609375
+      ],
+      "min": [
+        0.001953125,
+        0.09716796875
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 324,
+      "type": "VEC2",
+      "max": [
+        0.98615181446075439,
+        0.9969668984413147
+      ],
+      "min": [
+        0.0030331409070640802,
+        0.015172660350799561
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 768,
+      "type": "SCALAR",
+      "max": [
+        323.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "modular_docks_01_(2).bin",
+      "byteLength": 19680
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 3888
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3888,
+      "byteLength": 3888
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7776,
+      "byteLength": 5184
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12960,
+      "byteLength": 2592
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 15552,
+      "byteLength": 2592
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 18144,
+      "byteLength": 1536
+    }
+  ],
+  "images": [
+    {
+      "uri": "540049250T_WoodTrim_02_CMain.png",
+      "name": "T_WoodTrim_02_C"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "name": "M_WoodTrim"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 5,
+          "material": 0
+        }
+      ],
+      "name": "SM_Docks_01"
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "Modular_Docks_01 (2)"
+    },
+    {
+      "mesh": 0,
+      "rotation": [
+        2.18556941E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "SM_Docks_01"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "modular_docks_01_(2)"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "540049250T_WoodTrim_02_CMain"
+    }
+  ]
+}

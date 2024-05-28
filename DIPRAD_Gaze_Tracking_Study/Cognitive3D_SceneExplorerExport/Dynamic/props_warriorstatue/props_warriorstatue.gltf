@@ -1,0 +1,211 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 4934,
+      "type": "VEC3",
+      "max": [
+        1.9227240085601807,
+        5.7321867942810059,
+        1.9030966758728027
+      ],
+      "min": [
+        -2.4893813133239746,
+        -0.16606463491916656,
+        -1.9545392990112305
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 4934,
+      "type": "VEC3",
+      "max": [
+        0.99922597408294678,
+        0.999845027923584,
+        0.99938058853149414
+      ],
+      "min": [
+        -0.99900949001312256,
+        -0.999845027923584,
+        -0.999845027923584
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 4934,
+      "type": "VEC4",
+      "max": [
+        0.999845027923584,
+        0.99969017505645752,
+        0.99969017505645752,
+        1.0
+      ],
+      "min": [
+        -0.9999690055847168,
+        -0.9999690055847168,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 4934,
+      "type": "VEC2",
+      "max": [
+        0.99755859375,
+        0.99755859375
+      ],
+      "min": [
+        0.0019464492797851563,
+        0.001949310302734375
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 4934,
+      "type": "VEC2",
+      "max": [
+        0.9921875,
+        0.9921875
+      ],
+      "min": [
+        0.00806427001953125,
+        0.00806427001953125
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 19017,
+      "type": "SCALAR",
+      "max": [
+        4933.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "props_warriorstatue.bin",
+      "byteLength": 314338
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 59208
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 59208,
+      "byteLength": 59208
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 118416,
+      "byteLength": 78944
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 197360,
+      "byteLength": 39472
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 236832,
+      "byteLength": 39472
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 276304,
+      "byteLength": 38034
+    }
+  ],
+  "images": [
+    {
+      "uri": "679395905T_WarriorStatue_CMain.png",
+      "name": "T_WarriorStatue_C"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "name": "M_WarriorStatue"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 5,
+          "material": 0
+        }
+      ],
+      "name": "SM_WarriorStatue_LOD2"
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1,
+        2,
+        3
+      ],
+      "name": "Props_WarriorStatue"
+    },
+    {
+      "name": "SM_WarriorStatue_LOD0"
+    },
+    {
+      "name": "SM_WarriorStatue_LOD1"
+    },
+    {
+      "mesh": 0,
+      "name": "SM_WarriorStatue_LOD2"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "props_warriorstatue"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "679395905T_WarriorStatue_CMain"
+    }
+  ]
+}

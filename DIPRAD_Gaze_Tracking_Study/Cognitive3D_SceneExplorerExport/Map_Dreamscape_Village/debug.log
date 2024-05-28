@@ -2,8 +2,8 @@
 ***********SYSTEM************
 *****************************
 Unity Version:2023.2.17f1
-OS:Windows 10  (10.0.19045) 64bit
-System Time: 21.5.2024. 11:26:28
+OS:Windows 11  (10.0.22000) 64bit
+System Time: 28.5.2024. 1:23:36
 
 *****************************
 ***********PROJECT***********
@@ -13,6 +13,7 @@ Packages:
   com.cognitive3d.c3d-sdk 1.4.7
   com.meta.xr.sdk.all 64.0.0
   com.meta.xr.sdk.interaction.ovr.samples 64.0.0
+  com.unity.2d.sprite 1.0.0
   com.unity.collab-proxy 2.3.1
   com.unity.feature.development 1.0.2
   com.unity.timeline 1.8.6
@@ -83,15 +84,15 @@ Scene Settings:
   ├─Map_Dreamscape_Village
   │  ├─Scene Id: 91c0738b-d146-41d6-a95a-fa160bce261a
   │  ├─Scene Path: Assets/Scenes/Map_Dreamscape_Village.unity
-  │  ├─Last Revision: 05/16/2024 15:43:09
-  │  ├─Version Number: 1
-  │  └─Version Id: 6337
+  │  ├─Last Revision: 05/21/2024 09:28:49
+  │  ├─Version Number: 2
+  │  └─Version Id: 6367
   ├─Map_Amusement_Park
   │  ├─Scene Id: 1bbd9a3a-7854-4f9e-b289-5e9ca4d6a3f5
   │  ├─Scene Path: Assets/Scenes/Map_Amusement_Park.unity
-  │  ├─Last Revision: 05/16/2024 16:31:40
-  │  ├─Version Number: 1
-  │  └─Version Id: 6338
+  │  ├─Last Revision: 05/27/2024 12:12:32
+  │  ├─Version Number: 8
+  │  └─Version Id: 6427
   ├─Main_Menu
   │  ├─Scene Id: d54a43d2-3942-422a-b18e-8426b994e777
   │  ├─Scene Path: Assets/Scenes/Main_Menu.unity
@@ -111,10 +112,10 @@ Scene Settings:
 Scene Name: Map_Dreamscape_Village
 Scene Id: 91c0738b-d146-41d6-a95a-fa160bce261a
 Scene Path: Assets/Scenes/Map_Dreamscape_Village.unity
-Last Revision: 05/16/2024 15:43:09
-Version Number: 1
-Version Id: 6337
-Scene Size (mb): 219,25
+Last Revision: 05/21/2024 09:28:49
+Version Number: 2
+Version Id: 6367
+Scene Size (mb): 182,04
 Main Camera GameObject: CenterEyeAnchor
 Manager Initialize On Start: True
 Manager Startup Delay Time (s): 0
@@ -122,7 +123,7 @@ Manager Startup Delay Time (s): 0
 *****************************
 ****CURRENT SCENE OBJECTS****
 *****************************
-Dynamic Object Count: 3
+Dynamic Object Count: 99
   ├─RightHandAnchor
   │  ├─Mesh Name: righthandanchor
   │  ├─Has Collider: false
@@ -130,30 +131,882 @@ Dynamic Object Count: 3
   │  └─Has Child Colliders: false
   ├─LeftHandAnchor
   │  ├─Mesh Name: lefthandanchor
-  │  ├─Has Collider: false
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
   │  ├─Has Children: true
   │  └─Has Child Colliders: false
-  └─Backup body.001
-     ├─Mesh Name: backup_body.001
-     ├─Has Collider: false
-     └─Has Children: false
+  ├─Backup body.001
+  │  ├─Mesh Name: backup_body.001
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.SphereCollider
+  │  └─Has Children: false
+  ├─Main Menu
+  │  ├─Mesh Name: main_menu
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: false
+  ├─Table
+  │  ├─Mesh Name: table
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─Main Menu
+  │  ├─Mesh Name: main_menu
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: false
+  ├─Table
+  │  ├─Mesh Name: table
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_B_LOD0
+  │  ├─Mesh Name: sm_gravestone_b_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_B_LOD0
+  │  ├─Mesh Name: sm_gravestone_b_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_B_LOD0
+  │  ├─Mesh Name: sm_gravestone_b_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Fireplace_Mid_LOD0
+  │  ├─Mesh Name: sm_fireplace_mid_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_C_LOD0
+  │  ├─Mesh Name: sm_gravestone_c_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─Inn_Complete
+  │  ├─Mesh Name: inn_complete
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: true
+  ├─Structure
+  │  ├─Mesh Name: structure
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: true
+  ├─SM_Gravestone_A_LOD0
+  │  ├─Mesh Name: sm_gravestone_a_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_B_LOD0
+  │  ├─Mesh Name: sm_gravestone_b_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Windmill_Sail (1)
+  │  ├─Mesh Name: sm_windmill_sail_(1)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_A_LOD0
+  │  ├─Mesh Name: sm_gravestone_a_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Fireplace_Mid_LOD0
+  │  ├─Mesh Name: sm_fireplace_mid_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_C_LOD0
+  │  ├─Mesh Name: sm_gravestone_c_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_C_LOD0
+  │  ├─Mesh Name: sm_gravestone_c_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Barn_LOD0
+  │  ├─Mesh Name: sm_barn_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_B_LOD0
+  │  ├─Mesh Name: sm_gravestone_b_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_B_LOD0
+  │  ├─Mesh Name: sm_gravestone_b_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Fireplace_Top_LOD0
+  │  ├─Mesh Name: sm_fireplace_top_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Fireplace_Mid_LOD0
+  │  ├─Mesh Name: sm_fireplace_mid_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─House_2x1_Tall_02_Merged (1)
+  │  ├─Mesh Name: house_2x1_tall_02_merged_(1)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_WIndmill_Base
+  │  ├─Mesh Name: sm_windmill_base
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Barn_LOD0
+  │  ├─Mesh Name: sm_barn_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─House_3x1_01 (1)
+  │  ├─Mesh Name: house_3x1_01_(1)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_House_Window_B
+  │  ├─Mesh Name: sm_house_window_b
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Docks_01
+  │  ├─Mesh Name: sm_docks_01
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Fireplace_Mid_LOD0
+  │  ├─Mesh Name: sm_fireplace_mid_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─LargeHouse_Complete
+  │  ├─Mesh Name: largehouse_complete
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: true
+  ├─House_3x1_01
+  │  ├─Mesh Name: house_3x1_01
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Docks_01
+  │  ├─Mesh Name: sm_docks_01
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_A_LOD0
+  │  ├─Mesh Name: sm_gravestone_a_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─House_2x2_01_Merged
+  │  ├─Mesh Name: house_2x2_01_merged
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Door_A
+  │  ├─Mesh Name: sm_door_a
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─House_2x1_Tall_01_Merged
+  │  ├─Mesh Name: house_2x1_tall_01_merged
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_B_LOD0
+  │  ├─Mesh Name: sm_gravestone_b_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─House_3x1_02_Merged
+  │  ├─Mesh Name: house_3x1_02_merged
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Barn_LOD0
+  │  ├─Mesh Name: sm_barn_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Windmill_Sail (1)
+  │  ├─Mesh Name: sm_windmill_sail_(1)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─House_2x1_01_Merged
+  │  ├─Mesh Name: house_2x1_01_merged
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─House_2x1_Tall_01_Merged (1)
+  │  ├─Mesh Name: house_2x1_tall_01_merged_(1)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Docks_01
+  │  ├─Mesh Name: sm_docks_01
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_RoofTIles_LOD0
+  │  ├─Mesh Name: sm_rooftiles_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─House_2x2_01_Merged (1)
+  │  ├─Mesh Name: house_2x2_01_merged_(1)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_WaterWheel_LOD0
+  │  ├─Mesh Name: sm_waterwheel_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─House_2x1_Tall_01_Merged (1)
+  │  ├─Mesh Name: house_2x1_tall_01_merged_(1)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_A_LOD0
+  │  ├─Mesh Name: sm_gravestone_a_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_WarriorStatue_LOD0
+  │  ├─Mesh Name: sm_warriorstatue_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_A_LOD0
+  │  ├─Mesh Name: sm_gravestone_a_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─Tower (2)
+  │  ├─Mesh Name: tower_(2)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: true
+  ├─SM_Gravestone_B_LOD0
+  │  ├─Mesh Name: sm_gravestone_b_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_A_LOD0
+  │  ├─Mesh Name: sm_gravestone_a_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─House_3x1_02_Merged (1)
+  │  ├─Mesh Name: house_3x1_02_merged_(1)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─House_2x1_02_Merged (1)
+  │  ├─Mesh Name: house_2x1_02_merged_(1)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─House_2x1_Tall_01_Merged
+  │  ├─Mesh Name: house_2x1_tall_01_merged
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Fireplace_Mid_LOD0
+  │  ├─Mesh Name: sm_fireplace_mid_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─House_2x2_01_Merged (2)
+  │  ├─Mesh Name: house_2x2_01_merged_(2)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_B_LOD0
+  │  ├─Mesh Name: sm_gravestone_b_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_B_LOD0
+  │  ├─Mesh Name: sm_gravestone_b_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_House_Wall_5x4_Door_B_01
+  │  ├─Mesh Name: sm_house_wall_5x4_door_b_01
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_B_LOD0
+  │  ├─Mesh Name: sm_gravestone_b_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_C_LOD0
+  │  ├─Mesh Name: sm_gravestone_c_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─House_2x2_04_Merged
+  │  ├─Mesh Name: house_2x2_04_merged
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─House_2x1_Tall_02_Merged
+  │  ├─Mesh Name: house_2x1_tall_02_merged
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─House_2x2_02_Merged
+  │  ├─Mesh Name: house_2x2_02_merged
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_B_LOD0
+  │  ├─Mesh Name: sm_gravestone_b_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─House_2x1_Tall_02_Merged (2)
+  │  ├─Mesh Name: house_2x1_tall_02_merged_(2)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─House_2x1_Tall_03_Merged (1)
+  │  ├─Mesh Name: house_2x1_tall_03_merged_(1)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─House_2x1_01 (2)
+  │  ├─Mesh Name: house_2x1_01_(2)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_RoofTIles_LOD0
+  │  ├─Mesh Name: sm_rooftiles_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_C_LOD0
+  │  ├─Mesh Name: sm_gravestone_c_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─House_2x1_Tall_03_Merged
+  │  ├─Mesh Name: house_2x1_tall_03_merged
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─House_3x1_02_Merged (2)
+  │  ├─Mesh Name: house_3x1_02_merged_(2)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─House_2x2_01_Merged (3)
+  │  ├─Mesh Name: house_2x2_01_merged_(3)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Docks_01
+  │  ├─Mesh Name: sm_docks_01
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Fireplace_Mid_LOD0
+  │  ├─Mesh Name: sm_fireplace_mid_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_A_LOD0
+  │  ├─Mesh Name: sm_gravestone_a_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─House_2x1_Tall_01_Merged (2)
+  │  ├─Mesh Name: house_2x1_tall_01_merged_(2)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_House_Wall_5x4_Window_B_03
+  │  ├─Mesh Name: sm_house_wall_5x4_window_b_03
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_A_LOD0
+  │  ├─Mesh Name: sm_gravestone_a_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_A_LOD0
+  │  ├─Mesh Name: sm_gravestone_a_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─House_2x1_02_Merged
+  │  ├─Mesh Name: house_2x1_02_merged
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─House_2x1_01 (1)
+  │  ├─Mesh Name: house_2x1_01_(1)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─House_2x1_01 (3)
+  │  ├─Mesh Name: house_2x1_01_(3)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_B_LOD0
+  │  ├─Mesh Name: sm_gravestone_b_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─House_2x1_02_Merged
+  │  ├─Mesh Name: house_2x1_02_merged
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_WIndmill_Base (1)
+  │  ├─Mesh Name: sm_windmill_base_(1)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─House_2x1_01 (4)
+  │  ├─Mesh Name: house_2x1_01_(4)
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Gravestone_A_LOD0
+  │  ├─Mesh Name: sm_gravestone_a_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─House_2x2_01_Merged
+  │  ├─Mesh Name: house_2x2_01_merged
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  ├─SM_Fireplace_Top_LOD0
+  │  ├─Mesh Name: sm_fireplace_top_lod0
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.BoxCollider
+  │  └─Has Children: false
+  ├─Overhead_House
+  │  ├─Mesh Name: overhead_house
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  ├─Has Children: true
+  │  └─Has Child Colliders: true
+  ├─House_2x2_03
+  │  ├─Mesh Name: house_2x2_03
+  │  ├─Has Collider: true
+  │  ├─Collider Type: UnityEngine.MeshCollider
+  │  └─Has Children: false
+  └─FullHouse_OldChurch
+     ├─Mesh Name: fullhouse_oldchurch
+     ├─Has Collider: true
+     ├─Collider Type: UnityEngine.MeshCollider
+     ├─Has Children: true
+     └─Has Child Colliders: true
 
 *****************************
 ********EXPORT FOLDER********
 *****************************
-/Cognitive3D_SceneExplorerExport (292mb)
-   /Dynamic (1,19mb)
-      /backup_body.001 (0,59mb)
+/Cognitive3D_SceneExplorerExport (269mb)
+   /Dynamic (33,88mb)
+      /attraction_001 (0,68mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_001.bin (0,47mb)
+         attraction_001.gltf (0,01mb)
+         cvr_object_thumbnail.png (0,06mb)
+      /attraction_002 (0,61mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_002.bin (0,42mb)
+         attraction_002.gltf (0,01mb)
+         cvr_object_thumbnail.png (0,03mb)
+      /attraction_003 (0,94mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_003.bin (0,68mb)
+         attraction_003.gltf (0,02mb)
+         cvr_object_thumbnail.png (0,10mb)
+      /attraction_004 (1,20mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_004.bin (0,96mb)
+         attraction_004.gltf (0,02mb)
+         cvr_object_thumbnail.png (0,08mb)
+      /attraction_006 (0,91mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_006.bin (0,67mb)
+         attraction_006.gltf (0,02mb)
+         cvr_object_thumbnail.png (0,07mb)
+      /attraction_007 (0,96mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_007.bin (0,75mb)
+         attraction_007.gltf (0,01mb)
+         cvr_object_thumbnail.png (0,06mb)
+      /attraction_008 (0,59mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_008.bin (0,36mb)
+         attraction_008.gltf (0,02mb)
+         cvr_object_thumbnail.png (0,07mb)
+      /attraction_009 (1,21mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_009.bin (1,00mb)
+         attraction_009.gltf (0,01mb)
+         cvr_object_thumbnail.png (0,05mb)
+      /attraction_010 (0,58mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_010.bin (0,37mb)
+         attraction_010.gltf (0,02mb)
+         cvr_object_thumbnail.png (0,04mb)
+      /attraction_011 (0,88mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_011.bin (0,68mb)
+         attraction_011.gltf (0,01mb)
+         cvr_object_thumbnail.png (0,05mb)
+      /attraction_012 (1,46mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_012.bin (1,22mb)
+         attraction_012.gltf (0,01mb)
+         cvr_object_thumbnail.png (0,08mb)
+      /attraction_013 (1,25mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_013.bin (1,00mb)
+         attraction_013.gltf (0,02mb)
+         cvr_object_thumbnail.png (0,08mb)
+      /attraction_014 (0,65mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_014.bin (0,43mb)
+         attraction_014.gltf (0,01mb)
+         cvr_object_thumbnail.png (0,07mb)
+      /attraction_15_001 (0,34mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_15_001.bin (0,13mb)
+         attraction_15_001.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,06mb)
+      /attraction_5_001 (0,25mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_5_001.bin (0,07mb)
+         attraction_5_001.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,03mb)
+      /attraction_5_002 (0,28mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_5_002.bin (0,07mb)
+         attraction_5_002.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,06mb)
+      /attraction_5_003 (0,26mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_5_003.bin (0,06mb)
+         attraction_5_003.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,05mb)
+      /attraction_5_004 (0,26mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_5_004.bin (0,06mb)
+         attraction_5_004.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,05mb)
+      /attraction_5_005 (0,26mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_5_005.bin (0,06mb)
+         attraction_5_005.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,06mb)
+      /attraction_5_006 (0,26mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_5_006.bin (0,06mb)
+         attraction_5_006.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,05mb)
+      /attraction_5_007 (0,26mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_5_007.bin (0,06mb)
+         attraction_5_007.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,05mb)
+      /attraction_5_008 (0,26mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_5_008.bin (0,06mb)
+         attraction_5_008.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,05mb)
+      /attraction_8_001 (0,25mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_8_001.bin (0,06mb)
+         attraction_8_001.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,04mb)
+      /attraction_8_002 (0,24mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_8_002.bin (0,05mb)
+         attraction_8_002.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,05mb)
+      /attraction_8_004 (0,24mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_8_004.bin (0,05mb)
+         attraction_8_004.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,05mb)
+      /attraction_8_005 (0,24mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_8_005.bin (0,05mb)
+         attraction_8_005.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,04mb)
+      /attraction_8_006 (0,24mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_8_006.bin (0,05mb)
+         attraction_8_006.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,05mb)
+      /attraction_8_007 (0,24mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_8_007.bin (0,05mb)
+         attraction_8_007.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,05mb)
+      /attraction_entrance_001 (0,31mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_entrance_001.bin (0,11mb)
+         attraction_entrance_001.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,06mb)
+      /attraction_entrance_002 (0,30mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_entrance_002.bin (0,09mb)
+         attraction_entrance_002.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,06mb)
+      /attraction_entrance_003 (0,20mb)
+         1124351310TextureMain.png (0,14mb)
+         attraction_entrance_003.bin (0,02mb)
+         attraction_entrance_003.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,04mb)
+      /backup_body.001 (0,60mb)
          backup_body.001.bin (0,58mb)
          backup_body.001.gltf (0,00mb)
-         cvr_object_thumbnail.png (0,00mb)
-      /robot_head (0,60mb)
-         371857150Left_EyeMain.png (0,00mb)
-         371857150MouthHappyMain.png (0,00mb)
-         371857150Right_EyeMain.png (0,00mb)
-         cvr_object_thumbnail.png (0,00mb)
-         robot_head.bin (0,58mb)
-         robot_head.gltf (0,01mb)
+         cvr_object_thumbnail.png (0,01mb)
+      /boat_001 (0,19mb)
+         1124351310TextureMain.png (0,14mb)
+         boat_001.bin (0,01mb)
+         boat_001.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,04mb)
+      /boat_002 (0,20mb)
+         1124351310TextureMain.png (0,14mb)
+         boat_002.bin (0,01mb)
+         boat_002.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,04mb)
+      /building_001 (0,69mb)
+         1124351310TextureMain.png (0,14mb)
+         building_001.bin (0,48mb)
+         building_001.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,06mb)
+      /building_002 (0,33mb)
+         1124351310TextureMain.png (0,14mb)
+         building_002.bin (0,13mb)
+         building_002.gltf (0,00mb)
+         cvr_object_thumbnail.png (0,06mb)
+      /castle (2,73mb)
+         1124351310TextureMain.png (0,14mb)
+         castle.bin (2,50mb)
+         castle.gltf (0,06mb)
+         cvr_object_thumbnail.png (0,02mb)
+      /decoration_001 (0,22mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,04mb)
+         decoration_001.bin (0,03mb)
+         decoration_001.gltf (0,00mb)
+      /decoration_002 (0,29mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,04mb)
+         decoration_002.bin (0,10mb)
+         decoration_002.gltf (0,00mb)
+      /decoration_003 (0,23mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,03mb)
+         decoration_003.bin (0,05mb)
+         decoration_003.gltf (0,00mb)
+      /decoration_007 (0,31mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,06mb)
+         decoration_007.bin (0,10mb)
+         decoration_007.gltf (0,00mb)
+      /dinosaur_001 (0,29mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,03mb)
+         dinosaur_001.bin (0,12mb)
+         dinosaur_001.gltf (0,00mb)
+      /dinosaur_002 (0,29mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,03mb)
+         dinosaur_002.bin (0,12mb)
+         dinosaur_002.gltf (0,00mb)
+      /dinosaur_003 (0,24mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,02mb)
+         dinosaur_003.bin (0,07mb)
+         dinosaur_003.gltf (0,00mb)
+      /dinosaur_004 (0,28mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,03mb)
+         dinosaur_004.bin (0,10mb)
+         dinosaur_004.gltf (0,00mb)
+      /dinosaur_005 (0,48mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,02mb)
+         dinosaur_005.bin (0,31mb)
+         dinosaur_005.gltf (0,00mb)
+      /dinosaur_006 (0,29mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,02mb)
+         dinosaur_006.bin (0,12mb)
+         dinosaur_006.gltf (0,00mb)
+      /fountain_001 (0,29mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,04mb)
+         fountain_001.bin (0,10mb)
+         fountain_001.gltf (0,00mb)
+      /fountain_002 (0,21mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,04mb)
+         fountain_002.bin (0,03mb)
+         fountain_002.gltf (0,00mb)
+      /fountain_003 (0,43mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,07mb)
+         fountain_003.bin (0,21mb)
+         fountain_003.gltf (0,00mb)
+      /fountain_005 (0,28mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,05mb)
+         fountain_005.bin (0,08mb)
+         fountain_005.gltf (0,00mb)
+      /main_menu (0,02mb)
+         371857150Main_MenuMain.png (0,00mb)
+         cvr_object_thumbnail.png (0,01mb)
+         main_menu.bin (0,00mb)
+         main_menu.gltf (0,00mb)
+      /monument_001 (0,27mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,05mb)
+         monument_001.bin (0,07mb)
+         monument_001.gltf (0,00mb)
+      /pirate_ship_001 (1,28mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,05mb)
+         pirate_ship_001.bin (1,08mb)
+         pirate_ship_001.gltf (0,00mb)
+      /roller_coaster_001 (0,97mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,05mb)
+         roller_coaster_001.bin (0,77mb)
+         roller_coaster_001.gltf (0,00mb)
+      /roller_coaster_002 (0,73mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,06mb)
+         roller_coaster_002.bin (0,53mb)
+         roller_coaster_002.gltf (0,00mb)
+      /scene_001 (0,22mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,05mb)
+         scene_001.bin (0,03mb)
+         scene_001.gltf (0,00mb)
+      /scene_construction_001 (0,34mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,06mb)
+         scene_construction_001.bin (0,14mb)
+         scene_construction_001.gltf (0,00mb)
+      /signboard_001 (0,31mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,02mb)
+         signboard_001.bin (0,13mb)
+         signboard_001.gltf (0,00mb)
+      /speaker_001 (0,17mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,01mb)
+         speaker_001.bin (0,01mb)
+         speaker_001.gltf (0,00mb)
+      /stall_001 (0,32mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,06mb)
+         stall_001.bin (0,11mb)
+         stall_001.gltf (0,00mb)
+      /stall_002 (0,52mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,06mb)
+         stall_002.bin (0,31mb)
+         stall_002.gltf (0,00mb)
+      /stall_003 (0,21mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,04mb)
+         stall_003.bin (0,02mb)
+         stall_003.gltf (0,00mb)
+      /stall_004 (0,40mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,06mb)
+         stall_004.bin (0,19mb)
+         stall_004.gltf (0,00mb)
+      /stall_005 (0,37mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,04mb)
+         stall_005.bin (0,17mb)
+         stall_005.gltf (0,00mb)
+      /stall_006 (0,24mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,06mb)
+         stall_006.bin (0,04mb)
+         stall_006.gltf (0,00mb)
+      /stall_007 (0,29mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,06mb)
+         stall_007.bin (0,08mb)
+         stall_007.gltf (0,00mb)
+      /table (0,01mb)
+         cvr_object_thumbnail.png (0,01mb)
+         table.bin (0,00mb)
+         table.gltf (0,00mb)
+      /tent_001 (0,40mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,05mb)
+         tent_001.bin (0,20mb)
+         tent_001.gltf (0,00mb)
+      /tent_002 (0,22mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,03mb)
+         tent_002.bin (0,05mb)
+         tent_002.gltf (0,00mb)
+      /tent_003 (0,27mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,04mb)
+         tent_003.bin (0,09mb)
+         tent_003.gltf (0,00mb)
+      /ticket_stall_001 (0,19mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,03mb)
+         ticket_stall_001.bin (0,01mb)
+         ticket_stall_001.gltf (0,00mb)
+      /ticket_stall_002 (0,22mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,05mb)
+         ticket_stall_002.bin (0,02mb)
+         ticket_stall_002.gltf (0,00mb)
+      /ticket_stall_003 (0,21mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,05mb)
+         ticket_stall_003.bin (0,02mb)
+         ticket_stall_003.gltf (0,00mb)
+      /ticket_stall_006 (0,20mb)
+         1124351310TextureMain.png (0,14mb)
+         cvr_object_thumbnail.png (0,04mb)
+         ticket_stall_006.bin (0,02mb)
+         ticket_stall_006.gltf (0,00mb)
    /Main_Menu (14,97mb)
       1180938966controller_r_lo_BaseColorMain.png (0,59mb)
       122199232touchController_albedoMain.png (0,07mb)
@@ -203,7 +1056,7 @@ Dynamic Object Count: 3
       settings.json (0,00mb)
       /screenshot (0,10mb)
          screenshot.png (0,10mb)
-   /Map_Amusement_Park (41,52mb)
+   /Map_Amusement_Park (23,36mb)
       1124351310TextureMain.png (0,14mb)
       1180938966controller_r_lo_BaseColorMain.png (0,59mb)
       122199232touchController_albedoMain.png (0,07mb)
@@ -216,28 +1069,31 @@ Dynamic Object Count: 3
       1923169716MetaQuestTouchPlus_NormalsBump.png (0,71mb)
       2116372573Reticle-CircleMain.png (0,01mb)
       2120440669OculusQuestTouchControllerTextureMain.png (0,21mb)
+      371857150Left_EyeMain.png (0,00mb)
       371857150Main_MenuMain.png (0,00mb)
+      371857150MouthHappyMain.png (0,00mb)
+      371857150Right_EyeMain.png (0,00mb)
       371857150SelectionCircleMain.png (0,01mb)
       479365944OculusTouchForQuest2_AlbedoRoughnessMain.png (0,23mb)
       768432320controller_l_lo_BaseColorMain.png (0,58mb)
-      debug.log (0,01mb)
-      scene.bin (29,40mb)
-      scene.gltf (2,82mb)
+      debug.log (0,03mb)
+      scene.bin (11,50mb)
+      scene.gltf (2,48mb)
       settings.json (0,00mb)
-      /screenshot (0,28mb)
-         screenshot.png (0,28mb)
-   /Map_Dreamscape_Village (219,25mb)
-      1028224520T_Terrain_03_CMain.png (2,10mb)
-      1028296518T_Terrain_01_CMain.png (2,07mb)
-      1028397737T_Terrain_02_CMain.png (2,11mb)
-      1032697370T_SingleBed_CMain.png (1,09mb)
+      /screenshot (0,34mb)
+         screenshot.png (0,34mb)
+   /Map_Dreamscape_Village (182,04mb)
+      1028224520T_Terrain_03_CMain.png (0,57mb)
+      1028296518T_Terrain_01_CMain.png (0,57mb)
+      1028397737T_Terrain_02_CMain.png (0,57mb)
+      1032697370T_SingleBed_CMain.png (0,35mb)
       1039729349T_Stonewall_01_CMain.png (1,13mb)
       1132707143T_StorageChest_CMain.png (0,41mb)
       1163384348T_TowerSpear_CMain.png (0,26mb)
       1180938966controller_r_lo_BaseColorMain.png (0,59mb)
       122199232touchController_albedoMain.png (0,07mb)
       126583172T_Grain_Tiling_CMain.png (0,45mb)
-      1303577318T_WoodTrim_NBump.png (0,19mb)
+      1303577318T_WoodTrim_NBump.png (0,06mb)
       1309821063T_Cutlery_CMain.png (0,37mb)
       1327411633controller_l_lo_NormalBump.png (1,73mb)
       1332029353T_Ladder_CMain.png (0,30mb)
@@ -249,12 +1105,12 @@ Dynamic Object Count: 3
       1368558069T_CrateSquare_CMain.png (1,33mb)
       1371967097T_MugPot_CMain.png (0,42mb)
       1451568791T_WoodWall_CMain.png (0,23mb)
-      1457405314T_SingleBed_Cover_CMain.png (0,94mb)
+      1457405314T_SingleBed_Cover_CMain.png (0,28mb)
       1478287664T_WoodFence_Door_CMain.png (1,26mb)
       1542044607T_WoodPlanks_02_CMain.png (0,25mb)
-      1542075093T_WoodPlanks_01_NBump.png (0,13mb)
+      1542075093T_WoodPlanks_01_NBump.png (0,04mb)
       1542078432T_WoodPlanks_01_CMain.png (0,24mb)
-      1580854918T_Rugs_CMain.png (1,14mb)
+      1580854918T_Rugs_CMain.png (0,37mb)
       1639048993controller_r_lo_NormalBump.png (1,77mb)
       164493816T_Bottles_Green_CMain.png (0,40mb)
       1648974640T_WoodBeam_01_CMain.png (0,22mb)
@@ -270,7 +1126,7 @@ Dynamic Object Count: 3
       1816413895T_LightPole_CMain.png (1,51mb)
       1841557328T_AppleGroup_CMain.png (0,43mb)
       1859179109T_BenchStools_CMain.png (1,13mb)
-      1874190472T_VillageGlass_01_CMain.png (0,32mb)
+      1874190472T_VillageGlass_01_CMain.png (0,11mb)
       1906605474T_Firewood_CMain.png (1,28mb)
       1918152753MetaQuestTouchPlus_MetallicMetallicGloss.png (0,02mb)
       1923169716MetaQuestTouchPlus_NormalsBump.png (0,71mb)
@@ -281,10 +1137,10 @@ Dynamic Object Count: 3
       1956362499T_Candles_CMain.png (0,35mb)
       1961674958T_StoneWall_02_CMain.png (1,50mb)
       1961776177T_StoneWall_01_CMain.png (1,61mb)
-      1990836590T_Chandelier_CMain.png (1,22mb)
+      1990836590T_Chandelier_CMain.png (0,40mb)
       1995541448T_BarrelHolders_CMain.png (0,27mb)
       1998715090T_Stew_CMain.png (0,31mb)
-      1998733087T_CupboardCabinet_CMain.png (1,08mb)
+      1998733087T_CupboardCabinet_CMain.png (0,36mb)
       200953791T_Hay_Scattered_CMain.png (0,42mb)
       2044302852T_Banners_C2Main.png (0,32mb)
       2066356375T_WoodFence_CMain.png (1,24mb)
@@ -294,8 +1150,8 @@ Dynamic Object Count: 3
       2116372573Reticle-CircleMain.png (0,01mb)
       2120392440T_StoneBridge_Tiling_CMain.png (5,87mb)
       2120440669OculusQuestTouchControllerTextureMain.png (0,21mb)
-      2127640096T_TavernSign_CMain.png (1,34mb)
-      2139203590T_Village_Leaves_03_CMain.png (0,37mb)
+      2127640096T_TavernSign_CMain.png (0,43mb)
+      2139203590T_Village_Leaves_03_CMain.png (0,13mb)
       287652732T_Gravestones_CMain.png (1,17mb)
       291861324T_Tables_CMain.png (4,63mb)
       322572466T_Well_CMain.png (1,25mb)
@@ -309,9 +1165,9 @@ Dynamic Object Count: 3
       371857150Right_EyeMain.png (0,00mb)
       371857150SelectionCircleMain.png (0,00mb)
       371857150VillageDemoTerrainMain.png (1,29mb)
-      395544113T_Plaster_03_CMain.png (1,14mb)
-      413830831T_House_PlasterBricks_02_CMain.png (1,45mb)
-      413864656T_House_PlasterBricks_01_CMain.png (1,30mb)
+      395544113T_Plaster_03_CMain.png (0,38mb)
+      413830831T_House_PlasterBricks_02_CMain.png (0,45mb)
+      413864656T_House_PlasterBricks_01_CMain.png (0,41mb)
       419187048T_TreeLogs_CMain.png (1,24mb)
       458717440T_TreeStump_CMain.png (0,33mb)
       479365944OculusTouchForQuest2_AlbedoRoughnessMain.png (0,23mb)
@@ -329,25 +1185,25 @@ Dynamic Object Count: 3
       585400270T_Village_Dirt_02_CMain.png (0,39mb)
       600040550T_BrokenBarrel_CMain.png (1,25mb)
       613742012T_FarmTools_CMain.png (1,18mb)
-      643854047T_WoodTrim_CMain.png (0,28mb)
+      643854047T_WoodTrim_CMain.png (0,09mb)
       669797127T_TaskBoardSide_CMain.png (1,15mb)
       676657360T_RoofWell_CMain.png (1,10mb)
       679395905T_WarriorStatue_CMain.png (5,19mb)
-      681192388T_WaterWheel_CMain.png (1,21mb)
-      751201464T_DoubleBedFrame_CMain.png (1,13mb)
+      681192388T_WaterWheel_CMain.png (0,38mb)
+      751201464T_DoubleBedFrame_CMain.png (0,35mb)
       761451313T_TrimMetal_CMain.png (0,34mb)
       768432320controller_l_lo_BaseColorMain.png (0,58mb)
-      768509291T_CupboardShelf_CMain.png (0,93mb)
+      768509291T_CupboardShelf_CMain.png (0,31mb)
       838150316T_Banners_CMain.png (0,32mb)
       856012099T_RoofTiles_01_CMain.png (0,39mb)
       884416161T_Fireplace_CMain.png (1,16mb)
       904542048T_FoodPottery_CMain.png (1,36mb)
       910861957T_ExteriorLight_CMain.png (0,32mb)
-      942651811T_DoubleBed_Cover_CMain.png (1,30mb)
+      942651811T_DoubleBed_Cover_CMain.png (0,38mb)
       948061299T_Food_CMain.png (1,41mb)
       debug.log (0,01mb)
-      scene.bin (87,93mb)
-      scene.gltf (8,48mb)
+      scene.bin (69,75mb)
+      scene.gltf (5,16mb)
       settings.json (0,00mb)
-      /screenshot (0,71mb)
-         screenshot.png (0,71mb)
+      /screenshot (0,85mb)
+         screenshot.png (0,85mb)

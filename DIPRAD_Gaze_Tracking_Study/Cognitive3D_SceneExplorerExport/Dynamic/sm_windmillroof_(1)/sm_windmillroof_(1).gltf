@@ -1,0 +1,309 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 1502,
+      "type": "VEC3",
+      "max": [
+        11.155971527099609,
+        25.889192581176758,
+        11.269020080566406
+      ],
+      "min": [
+        -11.207508087158203,
+        -1.204693078994751,
+        -11.07952880859375
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1502,
+      "type": "VEC3",
+      "max": [
+        0.99987471103668213,
+        0.99964225292205811,
+        0.9999845027923584
+      ],
+      "min": [
+        -0.99987471103668213,
+        -1.0,
+        -0.9999845027923584
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1502,
+      "type": "VEC4",
+      "max": [
+        0.99997854232788086,
+        0.999064028263092,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.99906474351882935,
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 1502,
+      "type": "VEC2",
+      "max": [
+        0.99844819307327271,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 3942,
+      "type": "SCALAR",
+      "max": [
+        802.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 816,
+      "type": "SCALAR",
+      "max": [
+        1366.0
+      ],
+      "min": [
+        803.0
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5123,
+      "count": 600,
+      "type": "SCALAR",
+      "max": [
+        1501.0
+      ],
+      "min": [
+        1367.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "sm_windmillroof_(1).bin",
+      "byteLength": 82812
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 18024
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 18024,
+      "byteLength": 18024
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 36048,
+      "byteLength": 24032
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 60080,
+      "byteLength": 12016
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 72096,
+      "byteLength": 7884
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 79980,
+      "byteLength": 1632
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 81612,
+      "byteLength": 1200
+    }
+  ],
+  "images": [
+    {
+      "uri": "1345245395T_RoofTiles_CMain.png",
+      "name": "T_RoofTiles_C"
+    },
+    {
+      "uri": "1648974640T_WoodBeam_01_CMain.png",
+      "name": "T_WoodBeam_01_C"
+    },
+    {
+      "uri": "1163384348T_TowerSpear_CMain.png",
+      "name": "T_TowerSpear_C"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "name": "M_RoofTiles"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.0
+      },
+      "name": "M_WoodBeams"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0.0
+      },
+      "name": "M_RoofMetal"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 5,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 6,
+          "material": 2
+        }
+      ],
+      "name": "SM_RoofTIles_LOD2"
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1,
+        2,
+        3
+      ],
+      "name": "SM_WindmillRoof (1)"
+    },
+    {
+      "rotation": [
+        6.717942E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.00000012,
+        1.00000012
+      ],
+      "name": "SM_RoofTIles_LOD0"
+    },
+    {
+      "rotation": [
+        2.18556941E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "SM_RoofTIles_LOD1"
+    },
+    {
+      "mesh": 0,
+      "rotation": [
+        6.717942E-08,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "scale": [
+        1.0,
+        1.00000012,
+        1.00000012
+      ],
+      "name": "SM_RoofTIles_LOD2"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "sm_windmillroof_(1)"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "1345245395T_RoofTiles_CMain"
+    },
+    {
+      "sampler": 0,
+      "source": 1,
+      "name": "1648974640T_WoodBeam_01_CMain"
+    },
+    {
+      "sampler": 0,
+      "source": 2,
+      "name": "1163384348T_TowerSpear_CMain"
+    }
+  ]
+}

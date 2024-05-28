@@ -1,0 +1,567 @@
+{
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 23550,
+      "type": "VEC3",
+      "max": [
+        5.0338115692138672,
+        17.4742431640625,
+        5.2049160003662109
+      ],
+      "min": [
+        -11.391175270080566,
+        -1.8497703075408936,
+        -4.3763628005981445
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 23550,
+      "type": "VEC3",
+      "max": [
+        1.0000002384185791,
+        1.0,
+        1.0000001192092896
+      ],
+      "min": [
+        -1.0000002384185791,
+        -1.0,
+        -1.0000001192092896
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 23550,
+      "type": "VEC4",
+      "max": [
+        1.0000002384185791,
+        1.0,
+        1.0000001192092896,
+        1.0
+      ],
+      "min": [
+        -1.0000002384185791,
+        -1.0,
+        -1.0000001192092896,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 23550,
+      "type": "VEC2",
+      "max": [
+        2.60546875,
+        1.9522103071212769
+      ],
+      "min": [
+        -2.0234375,
+        -1.3678648471832275
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 23550,
+      "type": "VEC2",
+      "max": [
+        1.998046875,
+        1.9522103071212769
+      ],
+      "min": [
+        -1.0648585557937622,
+        -1.3678648471832275
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5123,
+      "count": 24342,
+      "type": "SCALAR",
+      "max": [
+        14779.0
+      ],
+      "min": [
+        0.0
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5123,
+      "count": 858,
+      "type": "SCALAR",
+      "max": [
+        15143.0
+      ],
+      "min": [
+        14780.0
+      ]
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 108,
+      "type": "SCALAR",
+      "max": [
+        15199.0
+      ],
+      "min": [
+        15144.0
+      ]
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5123,
+      "count": 30,
+      "type": "SCALAR",
+      "max": [
+        15219.0
+      ],
+      "min": [
+        15200.0
+      ]
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5123,
+      "count": 11862,
+      "type": "SCALAR",
+      "max": [
+        20409.0
+      ],
+      "min": [
+        15220.0
+      ]
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5123,
+      "count": 30,
+      "type": "SCALAR",
+      "max": [
+        20421.0
+      ],
+      "min": [
+        20410.0
+      ]
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5123,
+      "count": 1116,
+      "type": "SCALAR",
+      "max": [
+        20977.0
+      ],
+      "min": [
+        20422.0
+      ]
+    },
+    {
+      "bufferView": 12,
+      "componentType": 5123,
+      "count": 3942,
+      "type": "SCALAR",
+      "max": [
+        22773.0
+      ],
+      "min": [
+        20978.0
+      ]
+    },
+    {
+      "bufferView": 13,
+      "componentType": 5123,
+      "count": 1506,
+      "type": "SCALAR",
+      "max": [
+        23549.0
+      ],
+      "min": [
+        22774.0
+      ]
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "house_2x1_tall_01_merged.bin",
+      "byteLength": 1406388
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 282600
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 282600,
+      "byteLength": 282600
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 565200,
+      "byteLength": 376800
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 942000,
+      "byteLength": 188400
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1130400,
+      "byteLength": 188400
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1318800,
+      "byteLength": 48684
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1367484,
+      "byteLength": 1716
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1369200,
+      "byteLength": 216
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1369416,
+      "byteLength": 60
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1369476,
+      "byteLength": 23724
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1393200,
+      "byteLength": 60
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1393260,
+      "byteLength": 2232
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1395492,
+      "byteLength": 7884
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1403376,
+      "byteLength": 3012
+    }
+  ],
+  "images": [
+    {
+      "uri": "540049250T_WoodTrim_02_CMain.png",
+      "name": "T_WoodTrim_02_C"
+    },
+    {
+      "uri": "395544113T_Plaster_03_CMain.png",
+      "name": "T_Plaster_03_C"
+    },
+    {
+      "uri": "413864656T_House_PlasterBricks_01_CMain.png",
+      "name": "T_House_PlasterBricks_01_C"
+    },
+    {
+      "uri": "1874190472T_VillageGlass_01_CMain.png",
+      "name": "T_VillageGlass_01_C"
+    },
+    {
+      "uri": "761451313T_TrimMetal_CMain.png",
+      "name": "T_TrimMetal_C"
+    },
+    {
+      "uri": "413830831T_House_PlasterBricks_02_CMain.png",
+      "name": "T_House_PlasterBricks_02_C"
+    },
+    {
+      "uri": "1039729349T_Stonewall_01_CMain.png",
+      "name": "T_Stonewall_01_C"
+    },
+    {
+      "uri": "856012099T_RoofTiles_01_CMain.png",
+      "name": "T_RoofTiles_01_C"
+    },
+    {
+      "uri": "1542044607T_WoodPlanks_02_CMain.png",
+      "name": "T_WoodPlanks_02_C"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "name": "M_WoodTrim"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.0
+      },
+      "name": "M_Plaster"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0.0
+      },
+      "name": "M_House_PlasterBricks_01"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicFactor": 0.0
+      },
+      "alphaMode": "MASK",
+      "alphaCutoff": 0.0,
+      "name": "M_Glass"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 4
+        },
+        "metallicFactor": 0.0
+      },
+      "name": "M_MetalTrim"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 5
+        },
+        "metallicFactor": 0.0
+      },
+      "name": "M_House_PlasterBricks_02"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 6
+        },
+        "metallicFactor": 0.0
+      },
+      "name": "M_House_StoneWall_01"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 7
+        },
+        "metallicFactor": 0.0
+      },
+      "name": "M_RoofTiles_Blue"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 8
+        },
+        "metallicFactor": 0.0
+      },
+      "name": "M_Roof_Wood"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 5,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 6,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 7,
+          "material": 2
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 8,
+          "material": 3
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 9,
+          "material": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 10,
+          "material": 5
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 11,
+          "material": 6
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 12,
+          "material": 7
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 13,
+          "material": 8
+        }
+      ],
+      "name": "House_2x1_Tall_01_Merged"
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "House_2x1_Tall_01_Merged"
+    }
+  ],
+  "samplers": [
+    {}
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "house_2x1_tall_01_merged"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "540049250T_WoodTrim_02_CMain"
+    },
+    {
+      "sampler": 0,
+      "source": 1,
+      "name": "395544113T_Plaster_03_CMain"
+    },
+    {
+      "sampler": 0,
+      "source": 2,
+      "name": "413864656T_House_PlasterBricks_01_CMain"
+    },
+    {
+      "sampler": 0,
+      "source": 3,
+      "name": "1874190472T_VillageGlass_01_CMain"
+    },
+    {
+      "sampler": 0,
+      "source": 4,
+      "name": "761451313T_TrimMetal_CMain"
+    },
+    {
+      "sampler": 0,
+      "source": 5,
+      "name": "413830831T_House_PlasterBricks_02_CMain"
+    },
+    {
+      "sampler": 0,
+      "source": 6,
+      "name": "1039729349T_Stonewall_01_CMain"
+    },
+    {
+      "sampler": 0,
+      "source": 7,
+      "name": "856012099T_RoofTiles_01_CMain"
+    },
+    {
+      "sampler": 0,
+      "source": 8,
+      "name": "1542044607T_WoodPlanks_02_CMain"
+    }
+  ]
+}
