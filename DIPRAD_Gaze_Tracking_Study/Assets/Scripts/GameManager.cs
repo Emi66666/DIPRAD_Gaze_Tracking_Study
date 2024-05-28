@@ -264,7 +264,7 @@ public class GameManager : MonoBehaviour
         sr.WriteLine("Time: " + timeToFindPicture + " (Not found)");
         sr.WriteLine("Points: " + 0f);
 
-        _photonView.RPC("PictureColliderFound", RpcTarget.All, 0);
+        _photonView.RPC("PictureColliderFound", RpcTarget.All, 0, PhotonNetwork.IsMasterClient);
     }
 
     void EndGame()
